@@ -1,13 +1,13 @@
-let menuToggle = document.querySelector('.menu-toggle');        // Creamos un variable y dentro traemos la clase .menu-toggle
-let menuToggleIcon = document.querySelector('.menu-toggle i');  // Creamos un variable y dentro traemos el i dentro de .menu-toggle
-let menu = document.getElementById('menu');                     // Creamos un varaible y dentro traemos el id menu
+let menuToggle = document.querySelector('.menu-toggle');        // Create a variable and capture .menu-toogle
+let menuToggleIcon = document.querySelector('.menu-toggle i');  // Create a variable and capture the "i" tag inside .menu-toggle
+let menu = document.getElementById('menu');                     // Create a variable and capture #menu
 
 menuToggle.addEventListener('click', e=>{   
-    menu.classList.toggle('show');                              // Con Toogle alternamos anadiendo y quitando la clase .show a menuToggle
+    menu.classList.toggle('show');                              // Toogle between add and quit the .show class to .menuToggle
 
-    if(menu.classList.contains('show')) {                       // Condicionamos que: si el menu contiene la clase .show que le coloque el icono de cerrar
+    if(menu.classList.contains('show')) {                       // If the menu have the .show class, put the close icon
         menuToggleIcon.setAttribute('class', 'fa fa-times');
     }else{
-        menuToggleIcon.setAttribute('class', 'fa fa-bars');     // Si la condicion anterior no se cumple, cambia al menu de icono
+        menuToggleIcon.setAttribute('class', 'fa fa-bars');     // If the previosus condition doesnt applicate, change to the menu icon
     }
 });
