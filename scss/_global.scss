@@ -1,4 +1,56 @@
 // Global styles
 * {
     font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+}
+
+// Colors
+
+.color-primary {
+    color: $colorPrimary;
+}
+
+.color-secondary {
+    color: $colorSecondary;
+}
+
+.span-color {
+    color: $spanColor;
+}
+
+// Text
+
+h2 {
+    font-size: $font-38;
+    font-weight: $weight-300;
+}
+
+p {
+    font-size: $font-text;
+    color: $colorText;
+}
+
+span {
+    font-size: $font-text;
+    margin-bottom: 20px;
+}
+
+// Buttons
+
+.btn {
+    font-size: $font-btn;
+    padding: 6px 0;
+    margin: 10px 20px 0 0;
+    display: inline-block;
+    transition: ease-in-out .2s;
+
+    i {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
+
+.btn-primary {
+    color: $btnTextColor;
+    border-bottom: 2px solid $btnBorderColor;
 }

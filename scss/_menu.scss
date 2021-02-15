@@ -76,6 +76,7 @@ header {
 
 .show {
     height: 100vh !important; // Class needed to show the mobile menu with Javascript
+    z-index: 900;
 }
 
 // Media queries < 576 px
