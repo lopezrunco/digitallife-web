@@ -70,6 +70,38 @@ input, select {
   text-decoration: none;
 }
 
+#main-wrapper {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.content-wrap {
+  width: 98%;
+  max-width: 1140px;
+  margin: 0 auto;
+  float: none !important;
+}
+
+.main-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  text-indent: -9999em;
+}
+
+header,
+main,
+section,
+article,
+footer {
+  position: relative;
+}
+
 .color-primary {
   color: #6EC1E4;
 }
@@ -149,6 +181,8 @@ header {
   overflow: hidden;
   transition: ease-out 0.3s;
   background: #fff;
+  top: 60px;
+  border-top: 1px solid #6EC1E4;
 }
 .menu ul li {
   display: block;
@@ -345,6 +379,50 @@ header {
     max-width: 1300px;
     margin: 0 auto;
   }
+}
+.main-box-container {
+  display: flex;
+  flex: wrap;
+}
+.main-box-container .box-group {
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.slide-up-boxes a {
+  display: block;
+  background: #eee;
+  border: 1 px solid #ccc;
+  border-radius: 2px;
+  height: 65px;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+}
+.slide-up-boxes h5 {
+  height: 65px;
+  text-align: center;
+  line-height: 20px;
+  transition: 0.2 linear;
+  -webkit-transition: 0.2s linear;
+}
+.slide-up-boxes a:hover h5 {
+  margin-top: -65px;
+}
+.slide-up-boxes div {
+  height: 45px;
+  padding: 0 15px;
+  margin-top: -5px;
+  opacity: 0;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transform: rotate(6deg);
+  -webkit-transform: rotate(6deg);
+}
+.slide-up-boxes a:hover div {
+  opacity: 1;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
 }
 
 /*# sourceMappingURL=main.css.map */

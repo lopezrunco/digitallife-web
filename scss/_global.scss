@@ -4,6 +4,40 @@
     text-decoration: none;
 }
 
+#main-wrapper {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.content-wrap {
+    width: 98%;
+    max-width: 1140px;
+    margin: 0 auto;
+    float: none !important;
+}
+
+.main-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    text-indent: -9999em;
+}
+
+header,
+main,
+section,
+article,
+footer {
+  position: relative;
+}
+
+
+
 // Colors
 
 .color-primary {

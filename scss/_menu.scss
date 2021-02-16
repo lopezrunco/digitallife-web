@@ -34,6 +34,8 @@ header {
     overflow: hidden;
     transition: ease-out .3s;
     background: $bgColor;
+    top: 60px;
+    border-top: 1px solid $colorPrimary;
 
     ul li {
         display: block;
