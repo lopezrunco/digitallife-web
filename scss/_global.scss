@@ -14,7 +14,7 @@
 }
 
 .content-wrap {
-    width: 98%;
+    width: 90%;
     max-width: 1140px;
     margin: 0 auto;
     float: none !important;
@@ -36,7 +36,9 @@ footer {
   position: relative;
 }
 
-
+section {
+    padding: 50px 0;
+}
 
 // Colors
 
@@ -57,11 +59,32 @@ footer {
 h2 {
     font-size: $font-38;
     font-weight: $weight-300;
+    line-height: 400;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-size: $font-22;
+    color: $btnTextColor;
+    font-weight: $weight-400;
+    margin-bottom: 25px;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-size: $font-text;
+    color: $btnBorderColor;
+    font-weight: $weight-400;
+    margin-bottom: 20px;
+    line-height: 1.2em;
 }
 
 p {
     font-size: $font-text;
     color: $colorText;
+    font-weight: $weight-300;
+    line-height: 1.3em;
+    margin-bottom: 20px;
 }
 
 span {

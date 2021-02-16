@@ -1,49 +1,49 @@
 const slides = document.querySelector(".slider").children;
-const prev = document.querySelector(".prev");
+const prev = document.querySelector(".prev"); 
 const next = document.querySelector(".next");
-const posision = document.querySelector(".position");
+const position = document.querySelector(".position");
 let index = 0;
 
-prev.addEventListener("click", function () {
+prev.addEventListener("click",function(){                           
     prevSlide();
     updateCirclePosition();
     resetTimer();
 })
-next.addEventListener("click", function () {
-    prevSlide();
+next.addEventListener("click",function(){
+    nextSlide();
     updateCirclePosition();
     resetTimer();
 })
 
-// Circle creators in html
-function circlePosition() {
-    for (let i = 0; i < slides.length; i++) {
-        const div = document.createElement("div");
-        div.innerHTML = i + 1;
-        div.setAttribute("onclick", "slideIndicator(this)")
-        div.ide = i;
-        if (i == 0) {
-            div.className = "active";
-        }
-        posision.appendChild(div);
+// Circle creator html
+function circlePosition(){
+    for(let i = 0; i < slides.length; i++){
+        const div=document.createElement("div");
+              div.innerHTML=i+1;
+            div.setAttribute("onclick","slideIndicator(this)")
+            div.id = i;
+            if(i == 0){
+                div.className = "active";
+            }
+           position.appendChild(div);
     }
 }
 circlePosition();
 
-// Show selected slide on circle click
-function slideIndicator(element) {
-    index = element.id;
+// Click take to slider
+function slideIndicator(element){
+    index=element.id;
     changeSlide();
     updateCirclePosition();
     resetTimer();
 }
 
-// Refresh position indicator on slider change
-function updateCirclePosition() {
-    for (let i = 0; i < posision.children.length; i++) {
-        posision.children[i].classList.remove("active"); // Remove .active class from all circle indicators
+// Refresh counter
+function updateCirclePosition(){
+    for(let i = 0; i < position.children.length; i++){
+        position.children[i].classList.remove("active");           
     }
-    posision.children[index].classList.add("active");
+    position.children[index].classList.add("active");
 }
 
 // Prev and Next buttons
@@ -76,10 +76,10 @@ function changeSlide(){
     slides[index].classList.add("active");
 }
 
-// Stop autoplay on indicator and arrow click
+// Stop autoplay
 function resetTimer(){
     clearInterval(timer);
-    timer = setInterval(autoPlay,4000); // Autoplat sarts again
+    timer = setInterval(autoPlay,4000);   
 }
 
 // Autoplay slider
@@ -88,4 +88,4 @@ function autoPlay(){
     updateCirclePosition();
 }
 
-let timer = setInterval(autoPlay, 7000);
+let timer = setInterval(autoPlay,7000);
