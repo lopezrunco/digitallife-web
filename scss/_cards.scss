@@ -1,0 +1,111 @@
+// Card grid
+.card-grid-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    // Margin between cards
+    .card-container {
+        margin-bottom: 20px;
+
+        a {
+            display: inline-block;
+        }
+
+        &:hover figure {
+            -webkit-transform: perspective(600px) rotateY(180deg);
+            -ms-transform: perspective(600px) rotateY(180deg);
+            -o-transform: perspective(600px) rotateY(180deg);
+            transform: perspective(600px) rotateY(180deg);
+
+            -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        figure {
+            // width: 350px;
+            // height: 350px;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            position: relative;
+            transition: all ease .5s;
+            transition: all ease .5s;
+            transform-style: preserve-3d;
+            transform: perspective(600px) rotateY(0deg); // Perspective changes on hover
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .front,
+            .back {
+                width: 100%;
+                height: 100%;
+                transition: all ease .5s;
+            }
+
+            .front {
+                display: block;
+                backface-visibility: hidden;
+            }
+
+            .back {
+                position: absolute;
+                top: 0;
+                padding: 20px;
+                color: #fff;
+                transform: perspective(600px) rotateY(180deg);
+                backface-visibility: hidden;
+                overflow: auto;
+                line-height: 22px;
+                font-size: 14px;
+                // Back face color
+                background: rgba(33, 189, 161, 1);
+                background: -moz-linear-gradient(left, rgba(33, 189, 161, 1) 0%, rgba(33, 189, 161, 0.6) 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(33, 189, 161, 1)), color-stop(100%, rgba(33, 189, 161, 0.6)));
+                background: -webkit-linear-gradient(left, rgba(33, 189, 161, 1) 0%, rgba(33, 189, 161, 0.6) 100%);
+                background: -o-linear-gradient(left, rgba(33, 189, 161, 1) 0%, rgba(33, 189, 161, 0.6) 100%);
+                background: -ms-linear-gradient(left, rgba(33, 189, 161, 1) 0%, rgba(33, 189, 161, 0.6) 100%);
+                background: linear-gradient(to right, rgba(33, 189, 161, 1) 0%, rgba(33, 189, 161, 0.6) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#21bda1', endColorstr='#21bda1', GradientType=1);
+
+                .title {
+                    color: #fff;
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                    font-size: 24px;
+                }
+
+                hr {
+                    height: 2px;
+                    background: #fff;
+                    border: none;
+                    margin-bottom: 20px;
+                    opacity: .5;
+                }
+
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// Hide shadow effect in mobile
+@media screen and (max-width: 992px) {
+    figure .back {
+        backface-visibility: visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .card-container:hover figure {
+        transform: perspective(600px) rotateY(0deg);
+    }
+}
