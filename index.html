@@ -67,7 +67,7 @@
             <div class="main-logo">
                 <h1>Web name</h1>
             </div>
-            <!-- Start Main h1 ---------------------------------------------------------------------------------->
+            <!-- End Main h1 ---------------------------------------------------------------------------------->
 
         </header>
         <!-- End Header -------------------------------------------------------------------------------------->
@@ -263,7 +263,7 @@
                             <!-- Item -->
                             <div class="row benefit-item">
                                 <div class="col-md-2">
-                                    <i class="fas fa-city"></i>
+                                    <i class="fas fa-thumbs-up"></i>
                                 </div>
                                 <div class="col-md-10">
                                     <h3>Lorem ipsum dolor sit amet, co adipisicing.</h3>
@@ -284,7 +284,32 @@
         </main>
         <!-- End Main ---------------------------------------------------------------------------------->
 
+        <!-- Start Scroll to top ---------------------------------------------------------------------------------->
+        <a href="#" class="scroll_To_Top" title="Go to top">
+            <i class="fas fa-2x fa-chevron-up"></i>
+        </a>
+        <!-- End Scroll to top ---------------------------------------------------------------------------------->
+
         <!-- Javascript -------------------------------------------------------------------------------------->
+        <!-- Scroll to top -->
+        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.scroll_To_Top').fadeIn();
+                    } else {
+                        $('.scroll_To_Top').fadeOut();
+                    }
+                });
+                $('.scroll_To_Top').click(function () {
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 700);
+                    return false
+                });
+            });
+        </script>
         <!-- Menu JS -->
         <script src="js/menu.js"></script>
         <!-- Image slider JS -->
