@@ -1,0 +1,75 @@
+.accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        text-align: center;
+    }
+
+    .accordion-container {
+        max-width: 800px;
+
+        .accordion-item {
+            position: relative;
+            margin: 10px 20px;
+            border-radius: 2px;
+            border: 1px solid $colorPrimary;
+
+            .title {
+                position: relative;
+                padding: 10px;
+                background: $colorPrimary;
+                cursor: pointer;
+                transition: ease-in-out .2s;
+
+                // Effect in hover item
+                &:hover {
+                    background: darken($color: $colorPrimary, $amount: 10);
+                }
+
+                // + default symbol on all titles
+                &::before {
+                    content: '+';
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 1.5em;
+                    color: #fff;
+                }
+
+                h3 {
+                    color: #fff;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        // Effect in active item
+        &.active {
+            background: darken($color: $colorPrimary, $amount: 10);
+        }
+
+        // symbol on active items
+        &.active .title::before {
+            content: '-';
+        }
+
+        // Content styles
+        .content {
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+        }
+
+        // active styles
+        .active .content {
+            height: 350px;
+            padding: 30px;
+        }
+
+    }
+}
