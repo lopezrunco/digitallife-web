@@ -42,11 +42,23 @@ section {
     padding: 50px 0;
 }
 
+footer {
+    padding: 30px 0 10px;
+}
+
 section.benefits,
 section.instructors,
 section.testimonial,
 section.donate {
     background: $bgColor2;
+}
+
+section.bottom {
+    background: darken($color: $bgColor2, $amount: 2);
+}
+
+footer {
+    background: darken($color: $bgColor2, $amount: 4);
 }
 
 // Colors
@@ -132,4 +144,10 @@ span {
 
 .align-center {
     text-align: center;
+}
+
+// List
+
+ul {
+    list-style: none;
 }

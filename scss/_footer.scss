@@ -1,0 +1,13 @@
+footer {
+    p,
+    a {
+        display: inline-block;
+        font-size: $font-14;
+        color: lighten($color: $colorText, $amount: 20);
+        margin-bottom: 20px;
+    }
+
+
+
+    
+}

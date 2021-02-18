@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -106,11 +107,23 @@ section {
   padding: 50px 0;
 }
 
+footer {
+  padding: 30px 0 10px;
+}
+
 section.benefits,
 section.instructors,
 section.testimonial,
 section.donate {
   background: #f8f8f8;
+}
+
+section.bottom {
+  background: #f3f3f3;
+}
+
+footer {
+  background: #eeeeee;
 }
 
 .color-primary {
@@ -187,6 +200,10 @@ span {
 
 .align-center {
   text-align: center;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Menu styles */
@@ -804,6 +821,81 @@ header {
 }
 .accordion .accordion-item.active .title::before {
   content: "-";
+}
+
+.bottom .about-us,
+.bottom .bottom-menu,
+.bottom .contact-info {
+  margin-bottom: 50px;
+}
+.bottom .about-us img {
+  margin-bottom: 20px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: ease-in-out 0.1s;
+}
+.bottom .about-us img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.bottom .about-us ul.social {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.bottom .about-us ul.social a {
+  color: #21bda1;
+}
+.bottom .bottom-menu ul li {
+  margin-bottom: 20px;
+}
+.bottom .bottom-menu ul li::before {
+  content: "— ";
+}
+.bottom .bottom-menu ul li a {
+  color: #222222;
+}
+.bottom .contact-info .row {
+  margin-bottom: 10px;
+}
+.bottom .contact-info .row i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #7A7A7A;
+  opacity: 0.3;
+}
+.bottom .contact-info .row span a {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #111111;
+}
+.bottom .contact-info .row p {
+  font-size: 14px;
+  color: #adadad;
+}
+.bottom .last-blog .blog-link {
+  margin-bottom: 30px;
+}
+.bottom .last-blog .blog-link h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.bottom .last-blog .blog-link span {
+  font-size: 14px;
+  color: #adadad;
+}
+
+footer p,
+footer a {
+  display: inline-block;
+  font-size: 14px;
+  color: #adadad;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
