@@ -106,6 +106,13 @@ section {
   padding: 50px 0;
 }
 
+section.benefits,
+section.instructors,
+section.testimonial,
+section.donate {
+  background: #f8f8f8;
+}
+
 .color-primary {
   color: #21bda1;
 }
@@ -169,6 +176,17 @@ span {
 .btn-primary {
   color: #222222;
   border-bottom: 2px solid #21bda1;
+}
+
+.btn-secondary {
+  color: #fff;
+  background: #21bda1;
+  padding: 20px 40px;
+  border-radius: 2px;
+}
+
+.align-center {
+  text-align: center;
 }
 
 /* Menu styles */
@@ -493,9 +511,6 @@ header {
     width: 100%;
   }
 }
-.benefits {
-  background: #f8f8f8;
-}
 .benefits .benefit-item {
   padding: 20px 0;
 }
@@ -619,9 +634,6 @@ header {
     transform: perspective(600px) rotateY(0deg);
   }
 }
-.instructors {
-  background: #f8f8f8;
-}
 .instructors .description {
   margin-bottom: 30px;
 }
@@ -677,9 +689,6 @@ header {
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.27);
 }
 
-.testimonial {
-  background: #f8f8f8;
-}
 .testimonial .quote-icons {
   position: absolute;
   top: 0;
@@ -782,9 +791,6 @@ header {
 .accordion .accordion-container.active {
   background: #19927c;
 }
-.accordion .accordion-container.active .title::before {
-  content: "-";
-}
 .accordion .accordion-container .content {
   position: relative;
   height: 0;
@@ -795,6 +801,9 @@ header {
 .accordion .accordion-container .active .content {
   height: 350px;
   padding: 30px;
+}
+.accordion .accordion-item.active .title::before {
+  content: "-";
 }
 
 /*# sourceMappingURL=main.css.map */

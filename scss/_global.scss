@@ -36,8 +36,17 @@ footer {
   position: relative;
 }
 
+// Sections
+
 section {
     padding: 50px 0;
+}
+
+section.benefits,
+section.instructors,
+section.testimonial,
+section.donate {
+    background: $bgColor2;
 }
 
 // Colors
@@ -110,4 +119,17 @@ span {
 .btn-primary {
     color: $btnTextColor;
     border-bottom: 2px solid $btnBorderColor;
+}
+
+.btn-secondary {
+    color: #fff;
+    background: $colorPrimary;
+    padding: 20px 40px;
+    border-radius: 2px;
+}
+
+// Align
+
+.align-center {
+    text-align: center;
 }

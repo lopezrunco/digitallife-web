@@ -51,11 +51,6 @@
             background: darken($color: $colorPrimary, $amount: 10);
         }
 
-        // symbol on active items
-        &.active .title::before {
-            content: '-';
-        }
-
         // Content styles
         .content {
             position: relative;
@@ -71,5 +66,9 @@
             padding: 30px;
         }
 
+    }
+
+    .accordion-item.active .title::before {
+        content: '-';
     }
 }
