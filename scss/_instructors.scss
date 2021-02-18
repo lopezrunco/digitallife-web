@@ -1,0 +1,50 @@
+.instructors {
+    background: $bgColor2;
+
+    .description {
+        margin-bottom: 30px;
+    }
+
+    .instructor {
+        margin: 10px 0;
+
+        .img-wrap {
+            margin-bottom: 15px;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            
+            // Image control
+            div {
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            
+        }
+
+        h3 {
+            margin-bottom: 5px; 
+
+            a {
+                color: $btnTextColor;
+            }
+        }
+
+        p {
+            text-transform: lowercase;
+        }
+        
+    }
+
+    // Image control (nth-child 1 is de description column)
+    .instructor:nth-child(3) .img-wrap div {
+        background-position-y: -45px;
+    }
+    .instructor:nth-child(4) .img-wrap div {
+        background-position-x: -110px;
+    }
+
+}
