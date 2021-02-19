@@ -33,7 +33,7 @@
 
             .caption {
                 width: 90%; // Slider content width
-                max-width: 1140px;  // Aligned with content wrap
+                max-width: 1140px; // Aligned with content wrap
                 margin: 0 auto;
 
                 span {
@@ -156,5 +156,11 @@
         max-width: 1300px;
         margin: 0 auto;
     }
+}
 
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .slider-content {
+        height: 40vh;
+    }
 }

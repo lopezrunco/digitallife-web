@@ -20,7 +20,7 @@
             width: 100%;
             height: 300px;
             overflow: hidden;
-            
+
             // Image control
             div {
                 width: 100%;
@@ -29,11 +29,11 @@
                 background-repeat: no-repeat;
                 background-position: center center;
             }
-            
+
         }
 
         h3 {
-            margin-bottom: 5px; 
+            margin-bottom: 5px;
 
             a {
                 color: $btnTextColor;
@@ -43,15 +43,33 @@
         p {
             text-transform: lowercase;
         }
-        
+
     }
 
     // Image control (nth-child 1 is de description column)
     .instructor:nth-child(3) .img-wrap div {
         background-position-y: -45px;
     }
+
     .instructor:nth-child(4) .img-wrap div {
         background-position-x: -110px;
     }
 
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .instructors {
+        .description {
+            margin-top: 30px;
+        }
+
+        .icon i {
+            position: absolute;
+            top: 130px;
+            left: -50px;
+            font-size: 330px;
+            color: #cccccc52;
+        }
+    }
 }

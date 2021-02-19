@@ -33,7 +33,7 @@ main,
 section,
 article,
 footer {
-  position: relative;
+    position: relative;
 }
 
 // Sections
@@ -150,4 +150,11 @@ span {
 
 ul {
     list-style: none;
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    section.bottom {
+        padding-bottom: 0;
+    }
 }

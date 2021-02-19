@@ -18,7 +18,17 @@
             font-size: 80px;
             color: #fff;
             transform: translate(-50%, -50%);
-            text-shadow: 2px 2px 7px rgba(0,0,0,0.27);
+            text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.27);
+        }
+    }
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .institutional {
+        .video-thumb {
+            height: 310px;
+            background-repeat: no-repeat;
         }
     }
 }

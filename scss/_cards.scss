@@ -109,3 +109,14 @@
         transform: perspective(600px) rotateY(0deg);
     }
 }
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .courses {
+        text-align: center;
+    } 
+
+    .card-grid-container {
+        justify-content: space-around;
+    }
+}

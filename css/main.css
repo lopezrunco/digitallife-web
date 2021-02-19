@@ -206,6 +206,11 @@ ul {
   list-style: none;
 }
 
+@media screen and (min-width: 768px) {
+  section.bottom {
+    padding-bottom: 0;
+  }
+}
 /* Menu styles */
 header {
   display: flex;
@@ -442,6 +447,11 @@ header {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .slider-content {
+    height: 40vh;
+  }
+}
 .main-box-container {
   display: flex;
   flex: wrap;
@@ -502,6 +512,14 @@ header {
     flex-direction: row;
   }
 }
+@media screen and (min-width: 768px) {
+  .main-box-container .slide-up-boxes {
+    margin-right: 5px;
+  }
+  .main-box-container:last-child {
+    margin-right: 0;
+  }
+}
 .about-us .content {
   margin-bottom: 30px;
 }
@@ -547,6 +565,11 @@ header {
   font-size: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits .icon i {
+    right: -170px;
+  }
+}
 .scroll_To_Top {
   position: fixed;
   bottom: 15px;
@@ -658,6 +681,15 @@ header {
     transform: perspective(600px) rotateY(0deg);
   }
 }
+@media screen and (min-width: 768px) {
+  .courses {
+    text-align: center;
+  }
+
+  .card-grid-container {
+    justify-content: space-around;
+  }
+}
 .instructors .icon i {
   position: absolute;
   top: 150px;
@@ -700,6 +732,18 @@ header {
   background-position-x: -110px;
 }
 
+@media screen and (min-width: 768px) {
+  .instructors .description {
+    margin-top: 30px;
+  }
+  .instructors .icon i {
+    position: absolute;
+    top: 130px;
+    left: -50px;
+    font-size: 330px;
+    color: #cccccc52;
+  }
+}
 .institutional .description {
   margin-bottom: 40px;
 }
@@ -720,6 +764,12 @@ header {
   text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.27);
 }
 
+@media screen and (min-width: 768px) {
+  .institutional .video-thumb {
+    height: 310px;
+    background-repeat: no-repeat;
+  }
+}
 .testimonial .quote-icons {
   position: absolute;
   top: 0;
@@ -838,6 +888,11 @@ header {
   content: "-";
 }
 
+@media screen and (min-width: 768px) {
+  .accordion .accordion-container .active .content {
+    height: 200px;
+  }
+}
 .bottom .icon i {
   position: absolute;
   top: 0;
@@ -912,12 +967,21 @@ header {
   color: #adadad;
 }
 
+footer {
+  text-align: center;
+}
 footer p,
 footer a {
   display: inline-block;
   font-size: 14px;
   color: #adadad;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
