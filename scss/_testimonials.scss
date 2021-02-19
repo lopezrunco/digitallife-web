@@ -59,7 +59,7 @@
                     width: 150px;
                     height: 150px;
                     object-fit: cover; // Image doesn't distort
-                    border-radius: 100%; // Rounded image
+                    @include border-radius(100%); // Rounded image
                     -webkit-box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.56);
                     -moz-box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.56);
                     box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.56);

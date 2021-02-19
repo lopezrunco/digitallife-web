@@ -13,7 +13,7 @@
         .accordion-item {
             position: relative;
             margin: 10px 20px;
-            border-radius: 2px;
+            @include border-radius(2px);
             border: 1px solid $colorPrimary;
 
             .title {
@@ -21,7 +21,7 @@
                 padding: 10px;
                 background: $colorPrimary;
                 cursor: pointer;
-                transition: ease-in-out .2s;
+                @include transition(ease-in-out, .2s);
 
                 // Effect in hover item
                 &:hover {
@@ -34,7 +34,7 @@
                     position: absolute;
                     right: 20px;
                     top: 50%;
-                    transform: translateY(-50%);
+                    @include transform-translateY(-50%);
                     font-size: 1.5em;
                     color: #fff;
                 }
@@ -57,7 +57,7 @@
             position: relative;
             height: 0;
             overflow: hidden;
-            transition: 0.5s;
+            @include transitionSecs(0.5s);
             overflow-y: auto;
         }
 

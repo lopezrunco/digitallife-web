@@ -17,7 +17,7 @@
         display: block;
         color: $colorText;
         border: 1px solid #ccc;
-        border-radius: 2px;
+        @include border-radius(2px);
         height: 65px;
         margin: 0 0 20px 0;
         overflow: hidden;
@@ -32,8 +32,7 @@
         height: 65px;
         text-align: center;
         line-height: 65px;
-        transition: 0.2 linear;
-        -webkit-transition: 0.2s linear;
+        @include transition(linear, .2s);
     }
 
     a:hover h5 {

@@ -18,12 +18,12 @@
         img {
             margin-bottom: 20px;
             cursor: pointer;
-            filter: grayscale(100%);
+            @include filters(grayscale, 100%);
             opacity: .5;
-            transition: ease-in-out .1s;
+            @include transition(ease-in-out, 1s);
 
             &:hover {
-                filter: grayscale(0%);
+                @include filters(grayscale, 0%);
                 opacity: 1;
             }
         }

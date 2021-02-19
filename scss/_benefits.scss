@@ -16,7 +16,7 @@
             background: $spanColor;
             padding: 15px;
             color: #fff;
-            border-radius: 2px;
+            @include border-radius(2px);
             font-size: 30px;
         }
     }

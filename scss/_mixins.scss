@@ -1,0 +1,52 @@
+// Transitions
+@mixin transition($prop, $sec) {
+    -webkit-transition: $prop, $sec;
+    -moz-transition: $prop, $sec;
+    -ms-transition: $prop, $sec;
+    -o-transition: $prop, $sec;
+    transition: $prop, $sec;
+}
+
+@mixin transitionSecs($sec) {
+    -webkit-transition: $sec;
+    -moz-transition: $sec;
+    -ms-transition: $sec;
+    -o-transition: $sec;
+    transition: $sec;
+}
+
+// Border radius
+@mixin border-radius($border) {
+    -webkit-border-radius: $border;
+    -moz-border-radius: $border;
+    -ms-border-radius: $border;
+    -o-border-radius: $border;
+    border-radius: $border;
+}
+
+// Transform Scale
+@mixin transform-scale($scale) {
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    -ms-transform: scale($scale);
+    -o-transform: scale($scale);
+    transform: scale($scale);
+}
+
+// Transform TranslateY
+@mixin transform-translateY($translate) {
+    -webkit-transform: translateY($translate);
+    -moz-transform: translateY($translate);
+    -ms-transform: translateY($translate);
+    -o-transform: translateY($translate);
+    transform: translateY($translate);
+}
+
+// Filters
+@mixin filters($filter, $perc) {
+    -webkit-filter: $filter($perc);
+    -moz-filter: $filter($perc);
+    -ms-filter: $filter($perc);
+    -o-filter: $filter($perc);
+    filter: $filter($perc);
+}
