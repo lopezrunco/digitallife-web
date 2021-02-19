@@ -80,3 +80,16 @@
         background-position-x: 0;
     }
 }
+
+// Media queries > 1200 px
+@media screen and (min-width: 1200px) {
+    .instructors {
+        .instructor:nth-child(3) .img-wrap div {
+            background-position-y: -85px;
+        }
+
+        .instructor:nth-child(4) .img-wrap div {
+            background-position-y: -2px;
+        }
+    }
+}

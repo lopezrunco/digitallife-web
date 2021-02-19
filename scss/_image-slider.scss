@@ -164,3 +164,18 @@
         height: 40vh;
     }
 }
+
+// Media queries > 1200 px
+@media screen and (min-width: 1200px) {
+    .slider-content {
+        height: 80vh;
+
+        .slide .slider-caption .caption span {
+            font-size: 30px;
+        }
+
+        .slide .slider-caption .caption h2 {
+            font-size: 60px;
+        }
+    }
+}

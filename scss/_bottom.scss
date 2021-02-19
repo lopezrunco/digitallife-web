@@ -91,11 +91,36 @@
                 font-weight: $weight-400;
                 font-size: $font-16;
             }
-    
+
             span {
                 font-size: $font-14;
                 color: lighten($color: $colorText, $amount: 20);
             }
         }
     }
+}
+
+// Media queries > 1200 px
+@media screen and (min-width: 1200px) {
+
+    .bottom {
+        .about-us ul.social {
+            width: 40%;
+        }
+
+        .contact-info .row {
+            margin-bottom: 0;
+        }
+
+        .contact-info span {
+            font-size: 16px;
+        }
+
+        .last-blog .blog-link {
+            margin-bottom: 20px;
+        }
+    }
+
+
+
 }

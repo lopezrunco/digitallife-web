@@ -80,3 +80,10 @@
         height: 200px;
     }
 }
+
+// Media queries > 1200 px
+@media screen and (min-width: 1200px) {
+    .accordion .accordion-container .active .content {
+        height: 230px;
+    }
+}

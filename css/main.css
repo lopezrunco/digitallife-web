@@ -452,6 +452,17 @@ header {
     height: 40vh;
   }
 }
+@media screen and (min-width: 1200px) {
+  .slider-content {
+    height: 80vh;
+  }
+  .slider-content .slide .slider-caption .caption span {
+    font-size: 30px;
+  }
+  .slider-content .slide .slider-caption .caption h2 {
+    font-size: 60px;
+  }
+}
 .main-box-container {
   display: flex;
   flex: wrap;
@@ -757,6 +768,14 @@ header {
     background-position-x: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .instructors .instructor:nth-child(3) .img-wrap div {
+    background-position-y: -85px;
+  }
+  .instructors .instructor:nth-child(4) .img-wrap div {
+    background-position-y: -2px;
+  }
+}
 .institutional .description {
   margin-bottom: 40px;
 }
@@ -906,6 +925,11 @@ header {
     height: 200px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .accordion .accordion-container .active .content {
+    height: 230px;
+  }
+}
 .bottom .icon i {
   position: absolute;
   top: 0;
@@ -980,6 +1004,20 @@ header {
   color: #adadad;
 }
 
+@media screen and (min-width: 1200px) {
+  .bottom .about-us ul.social {
+    width: 40%;
+  }
+  .bottom .contact-info .row {
+    margin-bottom: 0;
+  }
+  .bottom .contact-info span {
+    font-size: 16px;
+  }
+  .bottom .last-blog .blog-link {
+    margin-bottom: 20px;
+  }
+}
 footer {
   text-align: center;
 }
