@@ -770,10 +770,10 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .instructors .instructor:nth-child(3) .img-wrap div {
-    background-position-y: -85px;
+    background-position-y: -30px;
   }
   .instructors .instructor:nth-child(4) .img-wrap div {
-    background-position-y: -2px;
+    background-position: -160px -3px;
   }
 }
 .institutional .description {
