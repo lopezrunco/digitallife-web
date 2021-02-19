@@ -73,3 +73,10 @@
         }
     }
 }
+
+// Media queries > 992 px
+@media screen and (min-width: 992px) {
+    .instructors .instructor:nth-child(4) .img-wrap div {
+        background-position-x: 0;
+    }
+}
