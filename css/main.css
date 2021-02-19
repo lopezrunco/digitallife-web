@@ -528,6 +528,13 @@ header {
     width: 100%;
   }
 }
+.benefits .icon i {
+  position: absolute;
+  top: -20px;
+  right: -120px;
+  font-size: 270px;
+  color: #cccccc52;
+}
 .benefits .benefit-item {
   padding: 20px 0;
 }
@@ -650,6 +657,13 @@ header {
   .card-container:hover figure {
     transform: perspective(600px) rotateY(0deg);
   }
+}
+.instructors .icon i {
+  position: absolute;
+  top: 150px;
+  right: -60px;
+  font-size: 200px;
+  color: #cccccc52;
 }
 .instructors .description {
   margin-bottom: 30px;
@@ -804,6 +818,7 @@ header {
 .accordion .accordion-container .accordion-item .title h3 {
   color: #fff;
   margin-bottom: 0;
+  font-size: 1em;
 }
 .accordion .accordion-container.active {
   background: #19927c;
@@ -823,6 +838,13 @@ header {
   content: "-";
 }
 
+.bottom .icon i {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  font-size: 220px;
+  color: #cccccc52;
+}
 .bottom .about-us,
 .bottom .bottom-menu,
 .bottom .contact-info {
