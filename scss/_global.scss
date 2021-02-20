@@ -81,7 +81,7 @@ h2 {
     font-size: $font-38;
     font-weight: $weight-300;
     line-height: 400;
-    line-height: 1.5em;
+    line-height: 1.1em;
 }
 
 h3 {
@@ -98,6 +98,14 @@ h4 {
     font-weight: $weight-400;
     margin-bottom: 5px;
     line-height: 1.2em;
+}
+
+h6{
+    font-size: $font-30;
+    font-weight: $weight-300;
+    line-height: 400;
+    line-height: 1.1em;
+    margin-bottom: 30px;
 }
 
 p {

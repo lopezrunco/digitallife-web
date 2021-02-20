@@ -142,7 +142,7 @@ h2 {
   font-size: 38px;
   font-weight: 300;
   line-height: 400;
-  line-height: 1.5em;
+  line-height: 1.1em;
 }
 
 h3 {
@@ -159,6 +159,14 @@ h4 {
   font-weight: 400;
   margin-bottom: 5px;
   line-height: 1.2em;
+}
+
+h6 {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 400;
+  line-height: 1.1em;
+  margin-bottom: 30px;
 }
 
 p {
@@ -260,6 +268,8 @@ header {
   background: #fff;
   top: 60px;
   border-top: 1px solid #21bda1;
+  border-bottom: 1px solid #21bda1;
+  z-index: 998;
 }
 .menu ul li {
   display: block;
@@ -612,6 +622,44 @@ header {
     width: 100%;
   }
 }
+.about-courses .content .btn-row {
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+.about-courses .content .about-img {
+  height: 300px;
+  width: 100%;
+  background: url(../img/about-course.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -ms-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  -webkit-background-position: -50px, 0;
+  -moz-background-position: -50px, 0;
+  -ms-background-position: -50px, 0;
+  -o-background-position: -50px, 0;
+  background-position: -50px, 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.178);
+}
+
+.benefits .title {
+  margin-bottom: 30px;
+}
+.benefits .title .btn {
+  margin: 0;
+}
+
 .benefits .icon i {
   position: absolute;
   top: -20px;

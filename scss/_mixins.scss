@@ -50,3 +50,39 @@
     -o-filter: $filter($perc);
     filter: $filter($perc);
 }
+
+// Background size
+@mixin bgSize($size) {
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -ms-background-size: $size;
+    -o-background-size: $size;
+    background-size: $size;
+}
+
+// Background repeat
+@mixin bgRepeat($repeat) {
+    -webkit-background-repeat: $repeat;
+    -moz-background-repeat: $repeat;
+    -ms-background-repeat: $repeat;
+    -o-background-repeat: $repeat;
+    background-repeat: $repeat;
+}
+
+// Background position
+@mixin bgPosition($positionX, $positionY) {
+    -webkit-background-position: $positionX, $positionY;
+    -moz-background-position: $positionX, $positionY;
+    -ms-background-position: $positionX, $positionY;
+    -o-background-position: $positionX, $positionY;
+    background-position: $positionX, $positionY;
+}
+
+// Box shadow
+@mixin boxShadow($X, $Y, $blur, $color) {
+    -webkit-box-shadow: $X, $Y, $blur, $color;
+    -moz-box-shadow: $X, $Y, $blur, $color;
+    -ms-box-shadow: $X, $Y, $blur, $color;
+    -o-box-shadow: $X, $Y, $blur, $color;
+    box-shadow: $X, $Y, $blur, $color;
+}

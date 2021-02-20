@@ -1,3 +1,4 @@
+// About us Home page
 .about-us {
     .content {
         margin-bottom: 30px;
@@ -35,3 +36,32 @@
     }
 }
 
+// About us About page
+.about-courses {
+    .content {
+
+        .btn-row {
+            margin-left: 0px;
+            margin-bottom: 20px;
+        }
+
+        .about-img {
+            height: 300px;
+            width: 100%;
+            background: url(../img/about-course.jpg);
+            @include bgSize(cover);
+            @include bgRepeat(no-repeat);
+            @include bgPosition(-50px, 0);
+            @include border-radius(2px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.178);
+        }
+    }
+}
+
+.benefits .title {
+    margin-bottom: 30px;
+
+    .btn {
+        margin: 0;
+    }
+}
