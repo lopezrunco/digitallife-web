@@ -139,6 +139,11 @@ span {
 .btn-primary {
     color: $btnTextColor;
     border-bottom: 2px solid $btnBorderColor;
+    @include transition(ease-in-out, .25s);
+
+    &:hover {
+        color: $colorPrimary;
+    }
 }
 
 .btn-secondary {
@@ -146,6 +151,11 @@ span {
     background: $colorPrimary;
     padding: 20px 40px;
     @include border-radius(2px);
+    @include transition(ease-in-out, .25s);
+
+    &:hover {
+        background: lighten($color: $colorPrimary, $amount: 10);
+    }
 }
 
 // Align

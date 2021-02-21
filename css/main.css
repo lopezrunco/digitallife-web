@@ -201,6 +201,14 @@ span {
 .btn-primary {
   color: #222222;
   border-bottom: 2px solid #21bda1;
+  -webkit-transition: ease-in-out, 0.25s;
+  -moz-transition: ease-in-out, 0.25s;
+  -ms-transition: ease-in-out, 0.25s;
+  -o-transition: ease-in-out, 0.25s;
+  transition: ease-in-out, 0.25s;
+}
+.btn-primary:hover {
+  color: #21bda1;
 }
 
 .btn-secondary {
@@ -212,6 +220,14 @@ span {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
+  -webkit-transition: ease-in-out, 0.25s;
+  -moz-transition: ease-in-out, 0.25s;
+  -ms-transition: ease-in-out, 0.25s;
+  -o-transition: ease-in-out, 0.25s;
+  transition: ease-in-out, 0.25s;
+}
+.btn-secondary:hover {
+  background: #35dcbe;
 }
 
 .align-center {
@@ -1179,6 +1195,42 @@ footer a {
   footer {
     text-align: left;
   }
+}
+.sponsors .sponsors-items {
+  margin-top: 20px;
+}
+.sponsors .sponsors-items .reveal-wrapper {
+  margin-bottom: 10px;
+  border: solid 1px #b7f3e8;
+  border-radius: 2px;
+  position: relative;
+  height: 200px;
+}
+.sponsors .sponsors-items .reveal-wrapper .reveal-content {
+  padding: 20px 10px;
+  text-align: center;
+}
+.sponsors .sponsors-items .reveal-wrapper .reveal-content h6 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.sponsors .sponsors-items .reveal-wrapper:hover .reveal-top {
+  height: 0%;
+}
+.sponsors .sponsors-items .reveal-top {
+  overflow: hidden;
+  position: absolute;
+  background: whitesmoke;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: ease 0.4s;
+}
+.sponsors .sponsors-items .reveal-top img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
