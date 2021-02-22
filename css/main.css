@@ -1293,5 +1293,40 @@ footer a {
     line-height: 16px;
   }
 }
+.courses-tab h2 {
+  font-size: 30px;
+}
+
+.tabs {
+  margin-top: 60px;
+  overflow: hidden;
+}
+.tabs .controls {
+  display: flex;
+}
+.tabs .controls a {
+  margin: 0 30px 0 0;
+  padding-bottom: 5px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+.tabs .controls a.active {
+  border: none;
+  border-bottom: 2px solid #21bda1;
+}
+.tabs .tabs-container {
+  display: flex;
+  flex-wrap: nowrap;
+  transform: translateX(0);
+  transition: all 0.2 ease-in;
+}
+.tabs .tabs-container .tab {
+  width: 100%;
+  flex-shrink: 0;
+}
+.tabs .tabs-container .tab .tab-content {
+  padding: 30px 0;
+}
 
 /*# sourceMappingURL=main.css.map */

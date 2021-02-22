@@ -1,0 +1,47 @@
+.courses-tab {
+    h2 {
+        font-size: $font-30;
+    }
+}
+
+.tabs {
+    margin-top: 60px;
+    overflow: hidden; // Only one tab at time is visible
+
+    .controls {
+        display: flex;
+
+        a {
+            // flex: 1; // Buttons width at 100%
+            margin: 0 30px 0 0;
+            padding-bottom: 5px;
+            background: #fff;
+            border: none;
+            cursor: pointer;
+
+            &.active {
+                // background: #e3e3e3;
+                border: none;
+                border-bottom: 2px solid $colorPrimary;
+
+            }
+        }
+    }
+
+    .tabs-container {
+        display: flex; // Tabs side by side
+        flex-wrap: nowrap; // Elements will t=syat side by side even if they overflow the width
+        transform: translateX(0); // With Javascript we will change this property and do the tab effect
+        transition: all 0.2 ease-in;
+
+        .tab {
+            // background: #e3e3e3;
+            width: 100%;
+            flex-shrink: 0; // The contet width is 100%
+
+            .tab-content {
+                padding: 30px 0;
+            }
+        }
+    }
+}
