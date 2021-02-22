@@ -65,3 +65,21 @@
         margin: 0;
     }
 }
+
+// Media queries < 768 px
+@media screen and (min-width: 768px) {
+    .about-courses .content .about-img {
+        height: 400px;
+        background-position: -200px;
+    }
+}
+
+// Media queries < 1200 px
+@media screen and (min-width: 1200px) {
+    .about-courses .content .about-img {
+        height: 300px;
+    background-position: -90px;
+    }
+}
+
+
