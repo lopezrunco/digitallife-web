@@ -230,6 +230,17 @@ span {
   background: #35dcbe;
 }
 
+.link {
+  margin-bottom: 30px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+.link i {
+  margin-left: 10px;
+}
+
 .align-center {
   text-align: center;
 }
@@ -1296,6 +1307,15 @@ footer a {
 .courses-tab h2 {
   font-size: 30px;
 }
+.courses-tab h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.courses-tab span {
+  display: inline-block;
+  color: #21bda1;
+  margin-bottom: 10px;
+}
 
 .tabs {
   margin-top: 60px;
@@ -1327,6 +1347,104 @@ footer a {
 }
 .tabs .tabs-container .tab .tab-content {
   padding: 30px 0;
+}
+
+.tabs-container .course-container .course-thumb {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+}
+
+.tabs-container .business .tab-content .row .course-container:nth-child(1) .course-thumb {
+  background: url(../img/business-1.jpg);
+  background-size: cover;
+}
+
+.tabs-container .business .tab-content .row .course-container:nth-child(2) .course-thumb {
+  background: url(../img/business-2.jpg);
+  background-size: cover;
+}
+
+.tabs-container .business .tab-content .row .course-container:nth-child(3) .course-thumb {
+  background: url(../img/business-3.jpg);
+  background-size: cover;
+}
+
+.tabs-container .business .tab-content .row .course-container:nth-child(4) .course-thumb {
+  background: url(../img/business-4.jpg);
+  background-size: cover;
+}
+
+.tabs-container .business .tab-content .row .course-container:nth-child(5) .course-thumb {
+  background: url(../img/business-5.jpg);
+  background-size: cover;
+}
+
+.tabs-container .business .tab-content .row .course-container:nth-child(6) .course-thumb {
+  background: url(../img/business-6.jpg);
+  background-size: cover;
+}
+
+.tabs-container .ecommerce .tab-content .row .course-container:nth-child(1) .course-thumb {
+  background: url(../img/ecommerce-1.jpg);
+  background-size: cover;
+}
+
+.tabs-container .ecommerce .tab-content .row .course-container:nth-child(2) .course-thumb {
+  background: url(../img/ecommerce-2.jpg);
+  background-size: cover;
+}
+
+.tabs-container .ecommerce .tab-content .row .course-container:nth-child(3) .course-thumb {
+  background: url(../img/ecommerce-3.jpg);
+  background-size: cover;
+}
+
+.tabs-container .ecommerce .tab-content .row .course-container:nth-child(4) .course-thumb {
+  background: url(../img/ecommerce-4.jpg);
+  background-size: cover;
+}
+
+.tabs-container .ecommerce .tab-content .row .course-container:nth-child(5) .course-thumb {
+  background: url(../img/ecommerce-5.jpg);
+  background-size: cover;
+}
+
+.tabs-container .ecommerce .tab-content .row .course-container:nth-child(6) .course-thumb {
+  background: url(../img/ecommerce-6.jpg);
+  background-size: cover;
+}
+
+.tabs-container .lifestyle .tab-content .row .course-container:nth-child(1) .course-thumb {
+  background: url(../img/lifestyle-1.jpg);
+  background-size: cover;
+}
+
+.tabs-container .lifestyle .tab-content .row .course-container:nth-child(2) .course-thumb {
+  background: url(../img/lifestyle-2.jpg);
+  background-size: cover;
+}
+
+.tabs-container .lifestyle .tab-content .row .course-container:nth-child(3) .course-thumb {
+  background: url(../img/lifestyle-3.jpg);
+  background-size: cover;
+}
+
+.tabs-container .lifestyle .tab-content .row .course-container:nth-child(4) .course-thumb {
+  background: url(../img/lifestyle-4.jpg);
+  background-size: cover;
+}
+
+.tabs-container .lifestyle .tab-content .row .course-container:nth-child(5) .course-thumb {
+  background: url(../img/lifestyle-5.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .courses-tab h2 {
+    font-size: 48px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

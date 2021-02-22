@@ -158,6 +158,18 @@ span {
     }
 }
 
+.link {
+    margin-bottom: 30px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: $font-14;
+    color: #000;
+
+    i {
+        margin-left: 10px;
+    }
+}
+
 // Align
 
 .align-center {
