@@ -1184,6 +1184,9 @@ header {
   font-weight: 400;
   font-size: 16px;
 }
+.bottom .last-blog .blog-link h3 a {
+  color: #7A7A7A;
+}
 .bottom .last-blog .blog-link span {
   font-size: 14px;
   color: #adadad;

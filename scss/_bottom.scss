@@ -90,6 +90,10 @@
                 margin-bottom: 10px;
                 font-weight: $weight-400;
                 font-size: $font-16;
+
+                a {
+                    color: $colorText;
+                }
             }
 
             span {
