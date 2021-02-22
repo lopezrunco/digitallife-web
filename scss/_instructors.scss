@@ -1,3 +1,4 @@
+// Instructors home page
 .instructors {
 
     .icon i {
@@ -92,4 +93,113 @@
             background-position: -160px -3px;
         }
     }
+}
+
+// Instructors instructors page
+
+body.instructors {
+    h2 {
+        font-size: $font-30;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-size: 16px;
+        margin-bottom: 40px;
+        display: inline-block;
+        color: $colorPrimary;
+    }
+
+    .pagination {
+        margin: 20px 0 60px;
+        text-align: center;
+
+        ul li {
+            display: inline-block;
+
+            a {
+                color: $btnTextColor;
+                padding: 10px;
+
+                &.active {
+                    border-bottom: 2px solid $colorPrimary;
+                }
+
+                .arrow:hover {
+                    color: $colorPrimary;
+                }
+            }
+        }
+    }
+
+    .aside-content {
+
+        h3,
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: $font-22;
+        }
+    }
+}
+
+
+
+
+// General instructors images control
+body.instructors .instructors .instructors-grid .img-wrap {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+// Individual instructors images control
+body.instructors .instructors .instructors-grid div:nth-child(1) .img-wrap {
+    background: url(../img/instructor-1.jpg);
+    background-position: -70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(2) .img-wrap {
+    background: url(../img/instructor-2.jpg);
+    background-position: 0px -15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(3) .img-wrap {
+    background: url(../img/instructor-3.jpg);
+    background-position: -100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(4) .img-wrap {
+    background: url(../img/instructor-4.jpg);
+    background-position: -90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(5) .img-wrap {
+    background: url(../img/instructor-5.jpg);
+    background-position: -40px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
+    background: url(../img/instructor-6.jpg);
+    background-position: -30px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

@@ -929,6 +929,94 @@ header {
     background-position: -160px -3px;
   }
 }
+body.instructors h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+body.instructors h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+body.instructors span {
+  font-size: 16px;
+  margin-bottom: 40px;
+  display: inline-block;
+  color: #21bda1;
+}
+body.instructors .pagination {
+  margin: 20px 0 60px;
+  text-align: center;
+}
+body.instructors .pagination ul li {
+  display: inline-block;
+}
+body.instructors .pagination ul li a {
+  color: #222222;
+  padding: 10px;
+}
+body.instructors .pagination ul li a.active {
+  border-bottom: 2px solid #21bda1;
+}
+body.instructors .pagination ul li a .arrow:hover {
+  color: #21bda1;
+}
+body.instructors .aside-content h3,
+body.instructors .aside-content h4 {
+  margin-bottom: 20px;
+}
+body.instructors .aside-content h3 {
+  font-size: 22px;
+}
+
+body.instructors .instructors .instructors-grid .img-wrap {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(1) .img-wrap {
+  background: url(../img/instructor-1.jpg);
+  background-position: -70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(2) .img-wrap {
+  background: url(../img/instructor-2.jpg);
+  background-position: 0px -15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(3) .img-wrap {
+  background: url(../img/instructor-3.jpg);
+  background-position: -100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(4) .img-wrap {
+  background: url(../img/instructor-4.jpg);
+  background-position: -90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(5) .img-wrap {
+  background: url(../img/instructor-5.jpg);
+  background-position: -40px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
+  background: url(../img/instructor-6.jpg);
+  background-position: -30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .institutional .description {
   margin-bottom: 40px;
 }
