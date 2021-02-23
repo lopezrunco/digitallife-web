@@ -167,6 +167,7 @@ body.instructors .instructors .instructors-grid .img-wrap {
 }
 
 // Individual instructors images control
+// Page 1
 body.instructors .instructors .instructors-grid div:nth-child(1) .img-wrap {
     background: url(../img/instructor-1.jpg);
     background-position: -70px;
@@ -209,6 +210,35 @@ body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
     background-repeat: no-repeat;
 }
 
+// Page 2
+body.instructors.page-2 .instructors .instructors-grid div:nth-child(1) .img-wrap {
+    background: url(../img/instructor-7.jpg);
+    background-position: -50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.instructors.page-2 .instructors .instructors-grid div:nth-child(2) .img-wrap {
+    background: url(../img/instructor-8.jpg);
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.instructors.page-2 .instructors .instructors-grid div:nth-child(3) .img-wrap {
+    background: url(../img/instructor-9.jpg);
+    background-position: -30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body.instructors.page-2 .instructors .instructors-grid div:nth-child(4) .img-wrap {
+    background: url(../img/instructor-10.jpg);
+    background-position: -70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 // Media queries > 768 px
 @media screen and (min-width: 768px) {
     body.instructors {
@@ -232,6 +262,7 @@ body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
 
         }
 
+        // Page 1
         .instructors .instructors-grid div:nth-child(1) .img-wrap {
             background-position: -40px;
         }
@@ -249,10 +280,21 @@ body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
         }
     }
 
+    // Page 2
+    body.instructors.page-2 .instructors .instructors-grid div:nth-child(3) .img-wrap {
+        background-position: 0;
+    }
+
+    body.instructors.page-2 .instructors .instructors-grid div:nth-child(4) .img-wrap {
+        background-position: -10px;
+    }
+
 }
 
 // Media queries > 992 px
 @media screen and (min-width: 992px) {
+
+    // Page 1
     body.instructors {
 
         .instructors .instructors-grid div:nth-child(1) .img-wrap {
@@ -276,11 +318,22 @@ body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
         }
     }
 
+    // Page 2
+    body.instructors.page-2 .instructors .instructors-grid div:nth-child(1) .img-wrap {
+        background-position: 0px;
+    }
+
+    body.instructors.page-2 .instructors .instructors-grid div:nth-child(4) .img-wrap {
+        background-position: 0;
+    }
+
 }
 
 
 // Media queries > 1200 px
 @media screen and (min-width: 1200px) {
+
+    // Page 1
     body.instructors .instructors .instructors-grid .img-wrap {
         height: 340px;
     }
@@ -307,5 +360,18 @@ body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
 
     body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
         background-position: -70px;
+    }
+
+    // Page 2
+    body.instructors.page-2 .instructors .instructors-grid div:nth-child(1) .img-wrap {
+        background-position: -100px;
+    }
+
+    body.instructors.page-2 .instructors .instructors-grid div:nth-child(3) .img-wrap {
+        background-position: -50px;
+    }
+
+    body.instructors.page-2 .instructors .instructors-grid div:nth-child(4) .img-wrap {
+        background-position: -170px;
     }
 }

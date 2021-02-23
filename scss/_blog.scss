@@ -1,0 +1,119 @@
+.blog {
+
+    h2 {
+        margin-bottom: 50px;
+        font-size: $font-30;
+    }
+
+    h3 {
+        font-weight: 400;
+    }
+
+    .blog-grid {
+
+        .blog-item {
+            margin-bottom: 40px;
+        }
+
+        .blog-item .date-comment {
+            margin-bottom: 15px;
+            font-size: $font-14;
+        
+            a {
+                color: $colorPrimary;
+            }
+        }
+
+        // Page 1
+        .blog-item .img-wrap {
+            width: 100%;
+            height: 300px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .blog-item:nth-child(1) .img-wrap {
+            background: url(../img/blog-1.jpg);
+            background-size: cover;
+        }
+
+        .blog-item:nth-child(2) .img-wrap {
+            background: url(../img/blog-2.jpg);
+            background-size: cover;
+        }
+
+        .blog-item:nth-child(3) .img-wrap {
+            background: url(../img/blog-3.jpg);
+            background-size: cover;
+        }
+
+        .blog-item:nth-child(4) .img-wrap {
+            background: url(../img/blog-4.jpg);
+            background-size: cover;
+        }
+
+        .blog-item:nth-child(5) .img-wrap {
+            background: url(../img/blog-5.jpg);
+            background-size: cover;
+        }
+
+        .blog-item:nth-child(6) .img-wrap {
+            background: url(../img/blog-6.jpg);
+            background-size: cover;
+        }
+
+
+    }
+
+    .pagination {
+        margin: 20px 0 30px;
+        text-align: center;
+
+        ul li {
+            display: inline-block;
+
+            a {
+                color: $btnTextColor;
+                padding: 10px;
+
+                &.active {
+                    border-bottom: 2px solid $colorPrimary;
+                }
+
+                .arrow:hover {
+                    color: $colorPrimary;
+                }
+            }
+        }
+    }
+
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .blog {
+
+        h2 {
+            font-size: $font-38;
+        }
+    }
+}
+
+// Page 2
+
+.blog-2 {
+    .blog-grid{
+        .blog-item:nth-child(1) .img-wrap {
+            background: url(../img/blog-7.jpg);
+            background-size: cover;
+        }
+        .blog-item:nth-child(2) .img-wrap {
+            background: url(../img/blog-8.jpg);
+            background-size: cover;
+        }
+        .blog-item:nth-child(3) .img-wrap {
+            background: url(../img/blog-9.jpg);
+            background-size: cover;
+        }
+    }
+}
