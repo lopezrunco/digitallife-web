@@ -1,3 +1,4 @@
+// Accordion Home page
 .accordion {
     display: flex;
     justify-content: center;
@@ -85,5 +86,74 @@
 @media screen and (min-width: 1200px) {
     .accordion .accordion-container .active .content {
         height: 230px;
+    }
+}
+
+
+// Accordion Instructors page
+body.instructors .accordion {
+    margin-bottom: 40px;
+
+    .accordion-container {
+        max-width: 100%;
+    }
+
+    .accordion-container .active .content {
+        height: 150px;
+        padding: 10px;
+    }
+
+    .accordion-item {
+        margin: 10px 0;
+        border: none;
+
+        .title {
+            background: none;
+            text-align: left;
+
+            &::before {
+                color: $colorPrimary;
+            }
+
+            &:hover {
+                background: none;
+            }
+
+            h3 {
+                color: $btnTextColor;
+                font-size: $font-16;
+            }
+
+            p {
+                font-size: 16px;
+                ;
+            }
+
+        }
+    }
+
+    .accordion-item.active .title h3 {
+        color: $colorPrimary;
+    }
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    body.instructors .accordion .accordion-item .title h3 {
+        font-size: $font-18;
+    }
+}
+
+// Media queries > 992 px
+@media screen and (min-width: 992px) {
+    body.instructors .accordion .accordion-container .active .content {
+        height: 90px;
+    }
+}
+
+// Media queries > 1200 px
+@media screen and (min-width: 1200px) {
+    body.instructors .accordion .accordion-container .active .content {
+        height: 140px;
     }
 }

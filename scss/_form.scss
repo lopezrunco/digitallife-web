@@ -1,0 +1,53 @@
+form {
+    font-family: $primaryFont;
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px 15px;
+        margin: 5px 0;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        font-size: $font-16;
+        outline: none; // Delete the blur effect on clicked inputs
+
+        &:focus {
+            border-radius: 0;
+            outline: 1px solid #ccc; // Change the blur color on clicked inputs
+        }
+
+        &::placeholder {
+            color: lighten($color: $colorText, $amount: 30); // Change color of placeholder
+        }
+
+    }
+
+    textarea {
+        max-height: 130px;
+    }
+
+    input#allow {
+        width: 10%;
+    }
+
+    label {
+        color: $colorText;
+    }
+
+    input[type=button].btn.btn-secondary {
+        padding: 10px 40px;
+        border: none;
+    }
+
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    form input#allow {
+        width: 5%;
+    }
+
+    input[type=button].btn.btn-secondary {
+        width: auto;
+        display: block; // The button falls to the next breakline
+    }
+}

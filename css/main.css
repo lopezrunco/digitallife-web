@@ -929,6 +929,9 @@ header {
     background-position: -160px -3px;
   }
 }
+body.instructors section.instructors {
+  background: #fff;
+}
 body.instructors h2 {
   font-size: 30px;
   margin-bottom: 50px;
@@ -1017,6 +1020,78 @@ body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+  body.instructors .title h2 {
+    font-size: 38px;
+  }
+  body.instructors h3 {
+    font-size: 22px;
+  }
+  body.instructors .aside-content h4 {
+    font-size: 22px;
+  }
+  body.instructors .aside-content h3 {
+    font-size: 30px;
+  }
+  body.instructors .instructors .instructors-grid div:nth-child(1) .img-wrap {
+    background-position: -40px;
+  }
+  body.instructors .instructors .instructors-grid div:nth-child(3) .img-wrap {
+    background-position: -58px;
+  }
+  body.instructors .instructors .instructors-grid div:nth-child(4) .img-wrap {
+    background-position: -40px;
+  }
+  body.instructors .instructors .instructors-grid div:nth-child(5) .img-wrap {
+    background-position: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.instructors .instructors .instructors-grid div:nth-child(1) .img-wrap {
+    background-position: 0;
+  }
+  body.instructors .instructors .instructors-grid div:nth-child(2) .img-wrap {
+    background-position: 0px -40px;
+  }
+  body.instructors .instructors .instructors-grid div:nth-child(3) .img-wrap {
+    background-position: 0px 0px;
+  }
+  body.instructors .instructors .instructors-grid div:nth-child(4) .img-wrap {
+    background-position: 0px;
+  }
+  body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
+    background-position: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body.instructors .instructors .instructors-grid .img-wrap {
+    height: 340px;
+  }
+
+  body.instructors .instructors .instructors-grid div:nth-child(1) .img-wrap {
+    background-position: -110px 0px;
+  }
+
+  body.instructors .instructors .instructors-grid div:nth-child(2) .img-wrap {
+    background-position: 0px -2px;
+  }
+
+  body.instructors .instructors .instructors-grid div:nth-child(3) .img-wrap {
+    background-position: -190px 0px;
+  }
+
+  body.instructors .instructors .instructors-grid div:nth-child(4) .img-wrap {
+    background-position: -200px;
+  }
+
+  body.instructors .instructors .instructors-grid div:nth-child(5) .img-wrap {
+    background-position: -110px;
+  }
+
+  body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
+    background-position: -70px;
+  }
+}
 .institutional .description {
   margin-bottom: 40px;
 }
@@ -1189,6 +1264,56 @@ body.instructors .instructors .instructors-grid div:nth-child(6) .img-wrap {
 @media screen and (min-width: 1200px) {
   .accordion .accordion-container .active .content {
     height: 230px;
+  }
+}
+body.instructors .accordion {
+  margin-bottom: 40px;
+}
+body.instructors .accordion .accordion-container {
+  max-width: 100%;
+}
+body.instructors .accordion .accordion-container .active .content {
+  height: 150px;
+  padding: 10px;
+}
+body.instructors .accordion .accordion-item {
+  margin: 10px 0;
+  border: none;
+}
+body.instructors .accordion .accordion-item .title {
+  background: none;
+  text-align: left;
+}
+body.instructors .accordion .accordion-item .title::before {
+  color: #21bda1;
+}
+body.instructors .accordion .accordion-item .title:hover {
+  background: none;
+}
+body.instructors .accordion .accordion-item .title h3 {
+  color: #222222;
+  font-size: 16px;
+}
+body.instructors .accordion .accordion-item .title p {
+  font-size: 16px;
+}
+body.instructors .accordion .accordion-item.active .title h3 {
+  color: #21bda1;
+}
+
+@media screen and (min-width: 768px) {
+  body.instructors .accordion .accordion-item .title h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body.instructors .accordion .accordion-container .active .content {
+    height: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body.instructors .accordion .accordion-container .active .content {
+    height: 140px;
   }
 }
 .bottom .icon i {
@@ -1535,6 +1660,51 @@ footer a {
 @media screen and (min-width: 1200px) {
   .courses-tab h2 {
     font-size: 48px;
+  }
+}
+form {
+  font-family: "Nunito Sans", sans-serif;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  outline: none;
+}
+form input:focus,
+form textarea:focus {
+  border-radius: 0;
+  outline: 1px solid #ccc;
+}
+form input::placeholder,
+form textarea::placeholder {
+  color: #c7c7c7;
+}
+form textarea {
+  max-height: 130px;
+}
+form input#allow {
+  width: 10%;
+}
+form label {
+  color: #7A7A7A;
+}
+form input[type=button].btn.btn-secondary {
+  padding: 10px 40px;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  form input#allow {
+    width: 5%;
+  }
+
+  input[type=button].btn.btn-secondary {
+    width: auto;
+    display: block;
   }
 }
 
