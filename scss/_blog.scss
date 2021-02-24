@@ -13,6 +13,24 @@
 
         .blog-item {
             margin-bottom: 40px;
+
+            .fade-icon {
+                opacity: 0;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-370%, -50%); 
+                // transform: translate(-50%, -50%); 
+                font-size: 60px;
+                color: #fff;
+                transition: ease-in-out .2s;
+            }
+
+            &:hover .fade-icon {
+                opacity: .5;
+                transform: translate(-50%, -50%); 
+            }
+
         }
 
         .blog-item .date-comment {

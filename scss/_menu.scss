@@ -111,7 +111,7 @@ header {
                 border-bottom: 1px solid rgba(255, 255, 255, 0);
 
                 &:hover {
-                    border-bottom: 2px solid $colorPrimary;
+                    color: $colorPrimary;
                 }
             }
         }
