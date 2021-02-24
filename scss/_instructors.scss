@@ -375,3 +375,121 @@ body.instructors.page-2 .instructors .instructors-grid div:nth-child(4) .img-wra
         background-position: -170px;
     }
 }
+
+// Instructor profile
+.instructor-profile {
+
+    .title {
+
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: $font-30;
+        }
+
+        h4 {
+            font-size: $font-18;
+        }
+    }
+
+    .profile-content {
+
+        h3 {
+            font-size: $font-30;
+            font-weight: $weight-400;
+        }
+
+        .img-wrap {
+            width: 100%;
+            height: 300px;
+            background: url(../img/instructor-8.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px -130px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            i {
+                font-size: $font-22;
+                padding: 10px 10px 10px 0;
+                color: $colorPrimary;
+            }
+
+            h4 {
+                font-size: $font-18;
+            }
+
+            p {
+                font-size: $font-16;
+            }
+
+            ul.social {
+                li {
+                    display: inline-block;
+
+                    a {
+                        background: $colorPrimary;
+                        color: #fff;
+                        padding: 12px 15px;
+                        border-radius: 2px;
+
+                        i {
+                            padding: 0;
+                            margin: 0;
+                            font-size: $font-18;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .instructor-profile {
+
+        .title {
+
+            h2 {
+                font-size: $font-38;
+            }
+
+            h4 {
+                font-size: $font-22;
+            }
+        }
+
+        .profile-content .img-wrap {
+            background-position: 0px -10px;
+            margin-bottom: 0;
+        }
+
+        .social {
+            margin: 20px 0 0;
+        }
+    }
+}
+
+// Media queries > 992 px
+@media screen and (min-width: 992px) {
+    .instructor-profile {
+        .profile-content .img-wrap {
+            background-position: -43px 0px;
+            height: 500px;
+        }
+    }
+}
+
+// Media queries > 1200 px
+@media screen and (min-width: 1200px) {
+    .instructor-profile {
+        .instructor-profile .profile-content .img-wrap {
+            background-position: 0px 0px;
+            height: 500px;
+        }
+    }
+}
