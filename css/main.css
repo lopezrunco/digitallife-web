@@ -2017,5 +2017,48 @@ section.donate .info .float-images img {
     width: 130px;
   }
 }
+.contact-info h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.contact-info h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.contact-info .fa-handshake,
+.contact-info .fa-thumbs-up,
+.contact-info .fa-thumbtack {
+  margin-bottom: 30px;
+  background: #21bda1;
+  padding: 15px;
+  color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 30px;
+}
+.contact-info .info-list {
+  margin-bottom: 50px;
+}
+.contact-info .info-list i {
+  font-size: 30px;
+  color: #21bda1;
+  padding: 0 0 10px;
+}
+.contact-info .info-list span {
+  font-size: 22px;
+}
+.contact-info .info-list p {
+  color: #c7c7c7;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-info h2 {
+    font-size: 38px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,52 @@
+.contact-info {
+
+    h2 {
+        font-size: $font-30;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        font-weight: $weight-400;
+        margin-bottom: 10px;
+    }
+
+    .fa-handshake,
+    .fa-thumbs-up,
+    .fa-thumbtack {
+        margin-bottom: 30px;
+        background: $spanColor;
+        padding: 15px;
+        color: #fff;
+        @include border-radius(2px);
+        font-size: 30px;
+    }
+
+    .info-list {
+
+        margin-bottom: 50px;
+        i {
+            font-size: 30px;
+            color: $colorPrimary;
+            padding: 0 0 10px;
+        }
+
+        span {
+            font-size: $font-22;
+        }
+
+        p {
+            color: lighten($color: $colorText, $amount: 30);
+            font-size: $font-16;
+        }
+    }
+
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .contact-info {
+        h2 {
+            font-size: $font-38;
+        }
+    }
+}
