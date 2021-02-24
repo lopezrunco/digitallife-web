@@ -80,14 +80,22 @@
                                     <li><button>Other</button></li>
                                 </ul>
                                 <legend>Personal info</legend>
-                                <label for="name">First name *</label>
-                                <input type="text" name="name" id="name" placeholder="First name" required>
-                                <label for="last-name">Last name *</label>
-                                <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
-                                <label for="email">Email Address *</label>
-                                <input type="text" name="email" id="email" placeholder="Email Address" required>
-                                <label for="phone">Phone number</label>
-                                <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                                <div class="name-group">
+                                    <label for="name">First name *</label>
+                                    <input type="text" name="name" id="name" placeholder="First name" required>    
+                                </div>
+                                <div class="last-name-group">
+                                    <label for="last-name">Last name *</label>
+                                    <input type="text" name="last-name" id="last-name" placeholder="Last name" required>    
+                                </div>
+                                <div class="email-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="phone-group">
+                                    <label for="phone">Phone number</label>
+                                    <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                                </div>
                                 <input type="checkbox" name="anonymus" id="anonymus">
                                 <label for="anonymus">Make anonymus donation</label>
                                 <input type="submit" value="Donate">

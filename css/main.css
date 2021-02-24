@@ -1809,6 +1809,20 @@ form input[type=button].btn.btn-secondary {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .name-group,
+.last-name-group,
+.email-group,
+.phone-group {
+    width: 49%;
+    display: inline-block;
+  }
+
+  input[type=submit] {
+    width: auto;
+    display: block;
+  }
+}
 .blog h2 {
   margin-bottom: 50px;
   font-size: 30px;
@@ -1957,6 +1971,10 @@ section.donate .info .float-images img {
   }
 }
 @media screen and (min-width: 768px) {
+  section.donate .title h2 {
+    font-size: 38px;
+  }
+
   section.donate .info .float-images {
     margin-bottom: 100px;
   }
@@ -1988,15 +2006,15 @@ section.donate .info .float-images img {
     margin-bottom: 0;
   }
   section.donate .info .float-images img:nth-child(1) {
-    width: 310px;
-  }
-  section.donate .info .float-images img:nth-child(2) {
     width: 210px;
   }
+  section.donate .info .float-images img:nth-child(2) {
+    width: 150px;
+  }
   section.donate .info .float-images img:nth-child(3) {
-    left: 70%;
-    top: -60%;
-    width: 140px;
+    left: -10%;
+    top: -30%;
+    width: 130px;
   }
 }
 

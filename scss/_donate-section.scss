@@ -83,6 +83,10 @@ section.donate {
 // Media queries > 768 px
 @media screen and (min-width: 768px) {
 
+    section.donate .title h2 {
+        font-size: $font-38;
+    }
+
     section.donate .info .float-images {
         margin-bottom: 100px;
 
@@ -125,17 +129,17 @@ section.donate {
         margin-bottom: 0;
 
         img:nth-child(1) {
-            width: 310px;
-        }
-
-        img:nth-child(2) {
             width: 210px;
         }
 
+        img:nth-child(2) {
+            width: 150px;
+        }
+
         img:nth-child(3) {
-            left: 70%;
-            top: -60%;
-            width: 140px;
+            left: -10%;
+            top: -30%;
+            width: 130px;
         }
 
     }
