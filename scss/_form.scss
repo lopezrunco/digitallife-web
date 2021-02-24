@@ -1,3 +1,4 @@
+// Instructors form
 form {
     font-family: $primaryFont;
 
@@ -49,5 +50,65 @@ form {
     input[type=button].btn.btn-secondary {
         width: auto;
         display: block; // The button falls to the next breakline
+    }
+}
+
+// Donate form
+.donate {
+    form {
+
+        input {
+            background: $formInputBg;
+            margin: 5px 0 20px;
+        }
+
+        .amount-label {
+            padding: 10px;
+        }
+
+        .amount-input {
+            width: 120px;
+            padding: 8px 10px;
+            font-size: $font-16;
+            border: 1px solid $formBorderColor;
+            margin: 0;
+        }
+
+        ul.amount-btns {
+            margin: 10px 0;
+
+            li {
+                display: inline-block;
+
+                button {
+                    border: 1px solid $formBorderColor;
+                    padding: 9px;
+                    font-size: $font-16;
+                    font-weight: $weight-700;
+                    margin: 2px 0;
+                }
+            }
+        }
+
+        legend {
+            font-size: $font-22;
+            font-weight: $weight-700;
+            border-bottom: 1px solid $formBorderColor;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type=checkbox] {
+            width: auto;
+            margin: 0 5px 0 0;
+        }
+
+        input[type=submit] {
+            margin: 20px 0;
+            border: none;
+            border-radius: 2px;
+            background: $colorPrimary;
+            color: #fff;
+        }
     }
 }
