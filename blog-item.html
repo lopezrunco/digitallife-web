@@ -44,7 +44,7 @@
                         <div class="col-12">
                             <div class="row title">
                                 <div class="col-md-10">
-                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quaerat?</h2>
+                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
                                 </div>
                                 <div class="col-md-2">
                                     <ul class="time">
@@ -75,11 +75,11 @@
                                 <!-- Img in css -->
                             </div>
                             <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                            <ul class="article list">
+                            <ul class="article-list">
                                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, sed! Lorem ipsum
                                     dolor sit
                                     amet consectetur.</li>
-                                <li>Lorem, ipsum dolor sit amet .</li>
+                                <li>Lorem, ipsum dolor sit amet.</li>
                                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
                                 <li>Lorem, ipsum dolor sit amet consectetur adipisicinus.</li>
                             </ul>
@@ -106,15 +106,15 @@
                                     Instagram
                                 </a>
                                 <a href="#">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Whatsapp
+                                    <i class="fab fa-youtube"></i>
+                                    Youtube
                                 </a>
                             </div>
                             <!-- Navigation -->
                             <div class="row navigation">
                                 <div class="col-md-6">
-                                    <ul>
-                                        <li>
+                                    <ul class="left">
+                                        <li class="arrows">
                                             <a href="blog-item.html">
                                                 <i class="fas fa-chevron-left"></i>
                                             </a>
@@ -128,33 +128,42 @@
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
-                                    <ul>
-                                        <li>
-                                            <a href="blog-item.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </a>
-                                        </li>
+                                    <ul class="right">
                                         <li>
                                             <a href="blog-item.html">
                                                 <span class="nav-direction">NEXT</span>
-                                                <span class="article-title">Lorem ipsum dolor sit.</span>
+                                                <span class="article-title">Lorem ipsum dolor sit amet conset.</span>
+                                            </a>
+                                        </li>
+                                        <li class="arrows">
+                                            <a href="blog-item.html">
+                                                <i class="fas fa-chevron-right"></i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <!-- Reply Form -->
-                            <form action="">
-                                <textarea name="comment" id="comment" cols="30" rows="10"
-                                    placeholder="Comment here"></textarea>
-                                <input type="text" name="name" id="name" placeholder="Name*" required>
-                                <input type="email" name="email" id="email" placeholder="Email*" required>
-                                <input type="url" name="website" id="website" placeholder="Website">
-                                <input type="checkbox" name="save" id="save">
-                                <label for="save">Lorem ipsum dolor, sit amet consectetur adipisicing elit
-                                    placeat.</label>
-                                <input type="submit" value="Post comment">
-                            </form>
+                            <div class="reply-form">
+                                <div class="title">
+                                    <h3>Comment this article</h3>
+                                    <span class="line"></span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, culpa.</p>
+                                </div>
+                                <form action="">
+                                    <textarea name="comment" id="comment" cols="30" rows="10"
+                                        placeholder="Your comment"></textarea>
+                                    <input type="text" name="name" id="name" placeholder="Name*" required>
+                                    <input type="email" name="email" id="email" placeholder="Email*" required>
+                                    <input type="url" name="website" id="website" placeholder="Website">
+                                    <div class="check-group">
+                                        <input type="checkbox" name="save" id="save">
+                                        <label for="save">Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                                            placeat.</label>
+                                    </div>
+                                    <input type="submit" value="Post comment">
+                                </form>
+                            </div>
                         </div>
                         <!-- Right side content -->
                         <div class="col-xl-4 side-content">

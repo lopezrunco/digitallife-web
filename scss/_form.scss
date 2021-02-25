@@ -129,3 +129,36 @@ form {
         display: block;
     }
 }
+
+// Reply form
+.blog-item {
+    .reply-form {
+        form {
+            textarea {
+                max-height: 200px;
+            }
+
+            .check-group {
+                margin: 20px 0;
+
+                input[type=checkbox] {
+                    width: auto;
+                    margin-right: 10px;
+                }
+
+                label {
+                    font-size: $font-14;
+                }
+            }
+
+            input[type=submit] {
+                margin: 20px 0;
+                border: none;
+                border-radius: 2px;
+                background: $colorPrimary;
+                color: #fff;
+            }
+
+        }
+    }
+}
