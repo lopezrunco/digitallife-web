@@ -2196,12 +2196,12 @@ section.donate .info .float-images img {
   margin-bottom: 30px;
 }
 .blog-item .main-content .main-article-img {
-  background: url(../img/business-1.jpg);
+  background: url(../img/business-1.jpg) center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .blog-item .main-content .secondary-article-img {
-  background: url(../img/business-2.jpg);
+  background: url(../img/business-2.jpg) center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2218,6 +2218,7 @@ section.donate .info .float-images img {
 }
 .blog-item .main-content ul.article-list li {
   margin-bottom: 10px;
+  line-height: 18px;
 }
 .blog-item .main-content .social {
   margin: 30px 0;
@@ -2228,6 +2229,10 @@ section.donate .info .float-images img {
   color: #21bda1;
   font-size: 14px;
   margin-right: 15px;
+  transition: ease-in-out 0.2s;
+}
+.blog-item .main-content .social a:hover {
+  color: #35dcbe;
 }
 .blog-item .main-content .social a i {
   background: #21bda1;
@@ -2236,6 +2241,10 @@ section.donate .info .float-images img {
   border-radius: 4px;
   font-size: 18px;
   margin: 0 20px 10px 0;
+  transition: ease-in-out 0.1s;
+}
+.blog-item .main-content .social a i:hover {
+  background: #35dcbe;
 }
 .blog-item .main-content .navigation {
   margin: 50px 0;
@@ -2262,6 +2271,10 @@ section.donate .info .float-images img {
 }
 .blog-item .main-content .navigation ul li span.article-title {
   font-size: 14px;
+  transition: ease-in-out 0.2s;
+}
+.blog-item .main-content .navigation ul li span.article-title:hover {
+  color: #21bda1;
 }
 .blog-item .main-content .navigation ul li.arrows {
   padding: 0;
@@ -2270,6 +2283,10 @@ section.donate .info .float-images img {
 }
 .blog-item .main-content .navigation ul li.arrows a {
   color: #21bda1;
+  transition: ease-in-out 0.25s;
+}
+.blog-item .main-content .navigation ul li.arrows a:hover {
+  color: #35dcbe;
 }
 .blog-item .main-content .reply-form .title {
   text-align: center;
@@ -2295,6 +2312,66 @@ section.donate .info .float-images img {
   background: url(../img/donate-ad-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.blog-item .side-content .advertise-bg .overlay {
+  width: 100%;
+  height: 100%;
+  background: #0000005c;
+  transition: ease-in-out 0.25s;
+}
+.blog-item .side-content .advertise-bg .overlay:hover {
+  background: #00000077;
+}
+.blog-item .side-content .advertise-bg .overlay .donate-tag {
+  color: #fff;
+  background: #21bda1;
+  text-align: center;
+  font-weight: 700;
+  padding: 3px;
+  transform: translate(36%, 120%) rotate(45deg);
+  box-shadow: 0px 4px 9px #0000007a;
+}
+.blog-item .side-content .advertise-bg .overlay .donate-tag span {
+  font-size: 13px;
+}
+.blog-item .side-content .advertise-bg .overlay .wrapper {
+  padding: 30px;
+}
+.blog-item .side-content .advertise-bg .overlay .wrapper h3 {
+  color: #fff;
+}
+.blog-item .side-content .advertise-bg .overlay .wrapper p {
+  color: #ffffffa3;
+  font-size: 16px;
+}
+.blog-item .side-content .advertise-bg .overlay .wrapper .btn {
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 25px;
+}
+.blog-item .side-content .recent-posts .title {
+  margin-bottom: 30px;
+}
+.blog-item .side-content .recent-posts .title h2 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.blog-item .side-content .recent-posts .item {
+  margin-bottom: 20px;
+}
+.blog-item .side-content .recent-posts .item h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.blog-item .side-content .recent-posts .item span {
+  font-size: 14px;
+  color: #adadad;
+}
+.blog-item .side-content .recent-posts .item .col-4 {
+  padding-right: 0;
 }
 .blog-item .side-content .recent-posts .item:nth-child(1) .img-wrap {
   width: 100%;
@@ -2362,14 +2439,58 @@ section.donate .info .float-images img {
 .blog-item .side-content .recent-posts .item:nth-child(10) .img-wrap {
   width: 100%;
   height: 70px;
-  background: url(../img/ecommerce-6.jpg);
+  background: url(../img/lifestyle-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-item .side-content .recent-posts .item:nth-child(11) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/lifestyle-3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
+  .blog-item .main-content .main-article-img,
+.blog-item .main-content .secondary-article-img {
+    height: 300px;
+  }
   .blog-item .main-content .social {
     flex-wrap: wrap;
+  }
+  .blog-item .main-content .navigation ul.left {
+    text-align: left;
+    border-right: 1px solid #e6e6e6;
+  }
+  .blog-item .side-content .advertise-bg {
+    height: 240px;
+  }
+  .blog-item .side-content .advertise-bg .overlay .donate-tag {
+    transform: translate(44%, 120%) rotate(45deg);
+  }
+  .blog-item .side-content .recent-posts .item {
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog-item .title {
+    margin-bottom: 30px;
+  }
+  .blog-item .title h2 {
+    font-size: 38px;
+  }
+  .blog-item .title ul.time {
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+    text-align: right;
+  }
+  .blog-item .side-content .recent-posts .item {
+    width: 100%;
+    padding-right: 0;
   }
 }
 
