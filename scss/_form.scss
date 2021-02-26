@@ -37,6 +37,7 @@ form {
     input[type=button].btn.btn-secondary {
         padding: 10px 40px;
         border: none;
+        cursor: pointer;
     }
 
 }
@@ -157,6 +158,12 @@ form {
                 border-radius: 2px;
                 background: $colorPrimary;
                 color: #fff;
+                cursor: pointer;
+                transition: ease-in-out .2s;
+
+                &:hover {
+                    background: lighten($color: $colorPrimary, $amount: 10);
+                }
             }
 
         }

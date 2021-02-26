@@ -383,12 +383,12 @@
                 height: 240px;
 
                 .overlay .donate-tag {
-                    transform: translate(44%, 120%) rotate(45deg);
+                    transform: translate(45%, 120%) rotate(45deg);
                 }
             }
 
             .recent-posts {
-                
+
                 .item {
                     width: 50%;
                     float: left;
@@ -396,6 +396,13 @@
                 }
             }
         }
+    }
+}
+
+// Media queries > 992 px
+@media screen and (min-width: 992px) {
+    .blog-item .side-content .advertise-bg .overlay .donate-tag {
+        transform: translate(46%, 120%) rotate(45deg);
     }
 }
 
@@ -423,6 +430,10 @@
                     width: 100%;
                     padding-right: 0;
                 }
+            }
+
+            .advertise-bg .overlay .donate-tag {
+                transform: translate(40%, 120%) rotate(45deg);
             }
         }
     }

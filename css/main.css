@@ -1187,8 +1187,14 @@ body.instructors.page-2 .instructors .instructors-grid div:nth-child(4) .img-wra
 .instructor-profile .profile-content .contact-info ul.social li a {
   background: #21bda1;
   color: #fff;
-  padding: 12px 15px;
+  padding: 11px;
+  width: 40px;
+  height: 40px;
   border-radius: 2px;
+  transition: ease-in-out 0.2s;
+}
+.instructor-profile .profile-content .contact-info ul.social li a:hover {
+  background: #35dcbe;
 }
 .instructor-profile .profile-content .contact-info ul.social li a i {
   padding: 0;
@@ -1827,6 +1833,7 @@ form label {
 form input[type=button].btn.btn-secondary {
   padding: 10px 40px;
   border: none;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -1918,6 +1925,11 @@ form input[type=button].btn.btn-secondary {
   border-radius: 2px;
   background: #21bda1;
   color: #fff;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.blog-item .reply-form form input[type=submit]:hover {
+  background: #35dcbe;
 }
 
 .blog h2 {
@@ -2467,12 +2479,17 @@ section.donate .info .float-images img {
     height: 240px;
   }
   .blog-item .side-content .advertise-bg .overlay .donate-tag {
-    transform: translate(44%, 120%) rotate(45deg);
+    transform: translate(45%, 120%) rotate(45deg);
   }
   .blog-item .side-content .recent-posts .item {
     width: 50%;
     float: left;
     padding-right: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .blog-item .side-content .advertise-bg .overlay .donate-tag {
+    transform: translate(46%, 120%) rotate(45deg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2491,6 +2508,9 @@ section.donate .info .float-images img {
   .blog-item .side-content .recent-posts .item {
     width: 100%;
     padding-right: 0;
+  }
+  .blog-item .side-content .advertise-bg .overlay .donate-tag {
+    transform: translate(40%, 120%) rotate(45deg);
   }
 }
 

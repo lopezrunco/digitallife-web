@@ -431,8 +431,15 @@ body.instructors.page-2 .instructors .instructors-grid div:nth-child(4) .img-wra
                     a {
                         background: $colorPrimary;
                         color: #fff;
-                        padding: 12px 15px;
+                        padding: 11px;
+                        width: 40px;
+                        height: 40px;
                         border-radius: 2px;
+                        transition: ease-in-out .2s;
+
+                        &:hover {
+                            background: lighten($color: $colorPrimary, $amount: 10);
+                        }
 
                         i {
                             padding: 0;
@@ -440,7 +447,9 @@ body.instructors.page-2 .instructors .instructors-grid div:nth-child(4) .img-wra
                             font-size: $font-18;
                             color: #fff;
                         }
+                        
                     }
+
                 }
             }
 
