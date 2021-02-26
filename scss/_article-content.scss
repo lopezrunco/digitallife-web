@@ -1,3 +1,4 @@
+// Blog article content styles
 .blog-item {
 
     .title {
@@ -436,5 +437,38 @@
                 transform: translate(40%, 120%) rotate(45deg);
             }
         }
+    }
+}
+
+// Course article content styles
+.course-item {
+    .main-content {
+
+        .video {
+
+            video[poster] {
+                object-fit: cover; // Thumb img cover the full width&height of video
+            }
+        }
+
+        .course-detail {
+            .avatar {
+                overflow: hidden;
+
+                ul li {
+                    display: inline-block;
+                }
+
+                .avatar-img {
+                    width: 70px;
+                    height: 70px;
+                    background: url(../img/instructor-1.jpg) center center;
+                    background-size: cover;
+                    border-radius: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
     }
 }

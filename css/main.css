@@ -2513,5 +2513,22 @@ section.donate .info .float-images img {
     transform: translate(40%, 120%) rotate(45deg);
   }
 }
+.course-item .main-content .video video[poster] {
+  object-fit: cover;
+}
+.course-item .main-content .course-detail .avatar {
+  overflow: hidden;
+}
+.course-item .main-content .course-detail .avatar ul li {
+  display: inline-block;
+}
+.course-item .main-content .course-detail .avatar .avatar-img {
+  width: 70px;
+  height: 70px;
+  background: url(../img/instructor-1.jpg) center center;
+  background-size: cover;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+}
 
 /*# sourceMappingURL=main.css.map */
