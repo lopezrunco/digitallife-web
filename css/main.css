@@ -1454,6 +1454,25 @@ body.instructors .accordion .accordion-item.active .title h3 {
     height: 140px;
   }
 }
+.course-item .accordion .accordion-container .accordion-item {
+  margin: 10px 0px;
+}
+.course-item .accordion .accordion-container .accordion-item .title h3 {
+  font-size: 14px;
+}
+.course-item .accordion .accordion-container .active .content {
+  height: 220px;
+}
+
+@media screen and (min-width: 768px) {
+  .course-item .accordion .accordion-container .accordion-item .title h3 {
+    font-size: 18px;
+  }
+
+  .course-item .accordion .accordion-container .active .content {
+    height: 150px;
+  }
+}
 .bottom .icon i {
   position: absolute;
   top: 0;
@@ -2513,22 +2532,310 @@ section.donate .info .float-images img {
     transform: translate(40%, 120%) rotate(45deg);
   }
 }
+.course-item .title {
+  margin-bottom: 50px;
+}
+.course-item .title h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.course-item .title .subject i {
+  color: #21bda1;
+}
 .course-item .main-content .video video[poster] {
   object-fit: cover;
 }
+.course-item .main-content .course-detail {
+  margin: 30px 0;
+}
 .course-item .main-content .course-detail .avatar {
   overflow: hidden;
-}
-.course-item .main-content .course-detail .avatar ul li {
-  display: inline-block;
+  margin-bottom: 20px;
 }
 .course-item .main-content .course-detail .avatar .avatar-img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   background: url(../img/instructor-1.jpg) center center;
   background-size: cover;
   border-radius: 100%;
   background-repeat: no-repeat;
+}
+.course-item .main-content .course-detail .avatar .instructor a {
+  position: relative;
+  top: 35%;
+}
+.course-item .main-content .course-detail .avatar .instructor a span {
+  color: #21bda1;
+}
+.course-item .main-content .course-detail .align-right {
+  text-align: right;
+}
+.course-item .main-content .course-detail .btn {
+  margin-bottom: 30px;
+}
+.course-item .main-content .course-detail .details-list ul li {
+  margin-bottom: 20px;
+}
+.course-item .main-content .course-detail .details-list ul li i {
+  margin-right: 15px;
+  color: #21bda1;
+}
+.course-item .main-content .course-detail .learn-list {
+  margin: 30px 0;
+}
+.course-item .main-content .course-detail .learn-list .title {
+  margin-bottom: 20px;
+}
+.course-item .main-content .course-detail .learn-list ul li i {
+  float: left;
+  margin: 0 10px 10px 0;
+  color: #21bda1;
+}
+.course-item .main-content .course-detail .course-description h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.course-item .main-content .course-detail .graduated-profile {
+  margin: 30px 0;
+  padding: 0;
+}
+.course-item .main-content .course-detail .graduated-profile .title {
+  margin-bottom: 0;
+}
+.course-item .main-content .course-detail .take-course-btn {
+  padding: 0;
+  margin-bottom: 20px;
+}
+.course-item .main-content .social {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.course-item .main-content .social a {
+  color: #21bda1;
+  font-size: 14px;
+  margin-right: 15px;
+  transition: ease-in-out 0.2s;
+}
+.course-item .main-content .social a:hover {
+  color: #35dcbe;
+}
+.course-item .main-content .social a i {
+  background: #21bda1;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  margin: 0 20px 10px 0;
+  transition: ease-in-out 0.1s;
+}
+.course-item .main-content .social a i:hover {
+  background: #35dcbe;
+}
+.course-item .main-content .navigation {
+  margin: 50px 0;
+}
+.course-item .main-content .navigation ul {
+  margin-bottom: 10px;
+}
+.course-item .main-content .navigation ul.left {
+  text-align: left;
+}
+.course-item .main-content .navigation ul.right {
+  text-align: right;
+}
+.course-item .main-content .navigation ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.course-item .main-content .navigation ul li span {
+  display: block;
+  margin-bottom: 5px;
+}
+.course-item .main-content .navigation ul li span.nav-direction {
+  color: #21bda1;
+}
+.course-item .main-content .navigation ul li span.article-title {
+  font-size: 14px;
+  transition: ease-in-out 0.2s;
+}
+.course-item .main-content .navigation ul li span.article-title:hover {
+  color: #21bda1;
+}
+.course-item .main-content .navigation ul li.arrows {
+  padding: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+}
+.course-item .main-content .navigation ul li.arrows a {
+  color: #21bda1;
+  transition: ease-in-out 0.25s;
+}
+.course-item .main-content .navigation ul li.arrows a:hover {
+  color: #35dcbe;
+}
+.course-item .side-content .advertise-bg {
+  width: 100%;
+  height: 300px;
+  background: url(../img/donate-ad-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.course-item .side-content .advertise-bg .overlay {
+  width: 100%;
+  height: 100%;
+  background: #0000005c;
+  transition: ease-in-out 0.25s;
+}
+.course-item .side-content .advertise-bg .overlay:hover {
+  background: #00000077;
+}
+.course-item .side-content .advertise-bg .overlay .donate-tag {
+  color: #fff;
+  background: #21bda1;
+  text-align: center;
+  font-weight: 700;
+  padding: 3px;
+  transform: translate(36%, 120%) rotate(45deg);
+  box-shadow: 0px 4px 9px #0000007a;
+}
+.course-item .side-content .advertise-bg .overlay .donate-tag span {
+  font-size: 13px;
+}
+.course-item .side-content .advertise-bg .overlay .wrapper {
+  padding: 30px;
+}
+.course-item .side-content .advertise-bg .overlay .wrapper h3 {
+  color: #fff;
+}
+.course-item .side-content .advertise-bg .overlay .wrapper p {
+  color: #ffffffa3;
+  font-size: 16px;
+}
+.course-item .side-content .advertise-bg .overlay .wrapper .btn {
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 25px;
+}
+.course-item .side-content .recent-posts .title {
+  margin-bottom: 30px;
+}
+.course-item .side-content .recent-posts .title h2 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.course-item .side-content .recent-posts .item {
+  margin-bottom: 20px;
+}
+.course-item .side-content .recent-posts .item h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.course-item .side-content .recent-posts .item span {
+  font-size: 14px;
+  color: #adadad;
+}
+.course-item .side-content .recent-posts .item .col-4 {
+  padding-right: 0;
+}
+.course-item .side-content .recent-posts .item:nth-child(1) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/business-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(2) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/business-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(3) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/business-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(4) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/business-6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(5) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/ecommerce-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(6) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/ecommerce-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(7) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/ecommerce-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(8) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/ecommerce-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(9) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/ecommerce-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(10) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/lifestyle-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-item .side-content .recent-posts .item:nth-child(11) .img-wrap {
+  width: 100%;
+  height: 70px;
+  background: url(../img/lifestyle-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .course-item .side-content .advertise-bg .overlay .donate-tag {
+    transform: translate(44%, 120%) rotate(45deg);
+  }
+
+  .course-item .side-content .recent-posts {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .course-item .side-content .advertise-bg .overlay .donate-tag {
+    transform: translate(40%, 120%) rotate(45deg);
+  }
+
+  .course-item .side-content .recent-posts {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -157,3 +157,30 @@ body.instructors .accordion {
         height: 140px;
     }
 }
+
+// Accordion course item page
+.course-item {
+    .accordion .accordion-container .accordion-item {
+        margin: 10px 0px;
+
+        .title h3 {
+            font-size: $font-14;
+        }
+    }
+
+    .accordion .accordion-container .active .content {
+        height: 220px;
+    }
+}
+
+// Media queries > 768 px
+@media screen and (min-width: 768px) {
+    .course-item .accordion .accordion-container .accordion-item .title h3 {
+        font-size: $font-18;
+    }
+
+    .course-item .accordion .accordion-container .active .content {
+        height: 150px;
+    }
+
+}
