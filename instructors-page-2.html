@@ -15,23 +15,65 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="css/main.css">
     <title>Instructors - DL Web</title>
-    <!-- Jquery include header.html and footer.html -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#bottom").load("bottom.html");
-            $("#footer").load("footer.html");
-        });
-    </script>
 </head>
 
 <body class="instructors page-2">
     <div id="main-wrapper">
 
-        <div id="header"></div>
+                <!-- Start Header ---------------------------------------------------------------------------------->
+                <header>
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt="main logo"></a>
+                    </div>
+                    <!-- Start Menu ------------------------------------------------------------------------------------>
+                    <nav id="menu" class="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="instructors.html">Instructors</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <!-- Contact info -->
+                        <ul class="contact-info-mobile">
+                            <li><a href="tel:(+59899000000)"><i class="fa fa-phone">&nbsp;&nbsp;</i>24/7 support: +598 98 000
+                                    000</a></li>
+                        </ul>
+                        <!-- Social links mobile -->
+                        <ul class="social-links-mobile">
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu-toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <nav id="menu-desktop" class="menu-desktop">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="instructors.html">Instructors</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- End Menu ---------------------------------------------------------------------------------->
+        
+                    <!-- Start Main h1 ---------------------------------------------------------------------------------->
+                    <div class="main-logo">
+                        <h1>Web name</h1>
+                    </div>
+                    <!-- End Main h1 ---------------------------------------------------------------------------------->
+        
+                </header>
+                <!-- End Header -------------------------------------------------------------------------------------->
+        
 
         <!-- Start Main ---------------------------------------------------------------------------------->
         <main id="main" class="main">
@@ -184,14 +226,123 @@
             </section>
             <!-- End Instructors ---------------------------------------------------------------------------------->
 
+            <!-- Start Bottom ---------------------------------------------------------------------------------->
+            <section class="bottom">
 
+                <!-- Icon -->
+                <div class="icon">
+                    <i class="far fa-envelope-open"></i>
+                </div>
 
-            <div id="bottom"></div>
+                <article class="content-wrap">
+                    <div class="row">
+
+                        <!-- About us -->
+                        <div class="col-md-6 col-xl-3 about-us">
+                            <img src="img/logo.png" alt="Logo" />
+                            <p>Lorem ipsum dolor sit amet consecteturaer adipisicing elit!<br>Lorem ipsum dolor sit.</p>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="col-md-6 col-xl-2 bottom-menu">
+                            <ul>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="donate.html">Donate</a></li>
+                                <li><a href="instructors.html">Become pro</a></li>
+                                <li><a href="contact.html">Contact with us</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Contact info -->
+                        <div class="col-md-6 col-xl-3 contact-info">
+                            <!-- Item -->
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <span><a href="tel:(+598)099000000">(+ 598) 099 000 000</a></span>
+                                    <p>24/7 support</p>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <i class="fas fa-life-ring"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <span><a href="tel:(+598)43500000">(+ 598) 4350 0000</a></span>
+                                    <p>We are here for you!</p>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <i class="fas fa-envelope-open"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <span><a href="mailto:info@dlweb.com">info@dlweb.com</a></span>
+                                    <p>Do you have any questions?</p>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <i class="fas fa-street-view"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <span>Road 5 km 143. Road to Obelisco, Florida.</span>
+                                    <p>Our location</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Latest blog -->
+                        <div class="col-md-6 col-xl-4 last-blog">
+                            <div class="blog-link">
+                                <h3><a href="blog-item.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenicabo delectus.</a></h3>
+                                <span>9 abr 2021</span>
+                            </div>
+                            <div class="blog-link">
+                                <h3><a href="blog-item.html">Lorem ipsum dolor sit amet consectenetur nostrum reprehenderit explicabo delectus.</a>
+                                </h3>
+                                <span>9 abr 2021</span>
+                            </div>
+                            <div class="blog-link">
+                                <h3><a href="blog-item.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur n explicabo
+                                    delectus.</a></h3>
+                                <span>9 abr 2021</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </section>
+            <!-- End Bottom ---------------------------------------------------------------------------------->
 
         </main>
         <!-- End Main ------------------------------------------------------------------------------------------>
 
-        <div id="footer"></div>
+                <!-- Start Footer ------------------------------------------------------------------------------------------>
+                <footer class="footer">
+                    <div class="content-wrap">
+                        <div class="row">
+                            <div class="col-md-6 col-xl-8">
+                                <p>2021 Lorem ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <div class="col-md-4 col-xl-2"><a href="tel:(+598)099000000">tel. (+598) 099 000 000</a></div>
+                            <div class="col-md-2 col-xl-2"><a href="mailto:info@dlweb.com">info@dlweb.com</a></div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End Footer ------------------------------------------------------------------------------------------>
 
         <!-- Start Scroll to top ---------------------------------------------------------------------------------->
         <a href="#" class="scroll_To_Top" title="Go to top">
@@ -221,6 +372,8 @@
         </script>
         <!-- Accordion JS -->
         <script src="js/accordion.js"></script>
+                        <!-- Menu JS -->
+                        <script src="js/menu.js"></script>
     </div>
 </body>
 

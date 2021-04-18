@@ -1,356 +1,598 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <!-- Custom css -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <title>Blog item - DL Web</title>
-    <!-- Jquery include header.html and footer.html -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#bottom").load("bottom.html");
-            $("#footer").load("footer.html");
-        });
-    </script>
-</head>
+  </head>
 
-<body class="blog-item">
+  <body class="blog-item">
     <div id="main-wrapper">
+      <!-- Start Header ---------------------------------------------------------------------------------->
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="main logo" /></a>
+        </div>
+        <!-- Start Menu ------------------------------------------------------------------------------------>
+        <nav id="menu" class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <!-- Contact info -->
+          <ul class="contact-info-mobile">
+            <li>
+              <a href="tel:(+59899000000)"
+                ><i class="fa fa-phone">&nbsp;&nbsp;</i>24/7 support: +598 98
+                000 000</a
+              >
+            </li>
+          </ul>
+          <!-- Social links mobile -->
+          <ul class="social-links-mobile">
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fa fa-bars"></i>
+        </div>
+        <nav id="menu-desktop" class="menu-desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- End Menu ---------------------------------------------------------------------------------->
 
-        <div id="header"></div>
+        <!-- Start Main h1 ---------------------------------------------------------------------------------->
+        <div class="main-logo">
+          <h1>Web name</h1>
+        </div>
+        <!-- End Main h1 ---------------------------------------------------------------------------------->
+      </header>
+      <!-- End Header -------------------------------------------------------------------------------------->
 
-        <!-- Start Main ---------------------------------------------------------------------------------->
-        <main id="main" class="main">
-
-            <section class="blog-item">
-                <article class="content-wrap">
-
-                    <div class="row">
-                        <!-- Title -->
-                        <div class="col-12">
-                            <div class="row title">
-                                <div class="col-xl-9">
-                                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit samer dell.</h2>
-                                </div>
-                                <div class="col-xl-3">
-                                    <ul class="time">
-                                        <li><i class="fas fa-calendar-alt"></i></li>
-                                        <li>9 april 2021</li>
-                                        <li><i class="far fa-clock"></i></li>
-                                        <li>12:00</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Main content -->
-                        <div class="col-xl-8 main-content">
-                            <div class="main-article-img">
-                                <!-- Img in css -->
-                            </div>
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro laboriosam quod qui
-                                eveniet
-                                maiores architecto sapiente iure sunt, odio cum.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, iusto.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolore fuga
-                                reiciendis
-                                dolores sequi libero culpa eligendi debitis, deserunt provident ab unde. Deleniti error
-                                assumenda nobis!
-                            </p>
-                            <div class="secondary-article-img">
-                                <!-- Img in css -->
-                            </div>
-                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                            <ul class="article-list">
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, sed! Lorem ipsum
-                                    dolor sit
-                                    amet consectetur.</li>
-                                <li>Lorem, ipsum dolor sit amet.</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicinus.</li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit qui voluptatibus
-                                obcaecati?
-                                Ipsum exercitationem mollitia vero voluptates esse earum modi. Maxime, doloribus! Amet
-                                quod
-                                deserunt, veritatis eius nemo officiis eum, quo enim distinctio accusamus sequi nisi
-                                repudiandae
-                                cum consequuntur repellendus.
-                            </p>
-                            <!-- Social links -->
-                            <div class="social">
-                                <a href="#">
-                                    <i class="fab fa-facebook"></i>
-                                    Facebook
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                    Twitter
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-instagram"></i>
-                                    Instagram
-                                </a>
-                                <a href="#">
-                                    <i class="fab fa-youtube"></i>
-                                    Youtube
-                                </a>
-                            </div>
-                            <!-- Navigation -->
-                            <div class="row navigation">
-                                <div class="col-md-6">
-                                    <ul class="left">
-                                        <li class="arrows">
-                                            <a href="blog-item.html">
-                                                <i class="fas fa-chevron-left"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="blog-item.html">
-                                                <span class="nav-direction">PREVIOUS</span>
-                                                <span class="article-title">Lorem ipsum dolor sit amet.</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="right">
-                                        <li>
-                                            <a href="blog-item.html">
-                                                <span class="nav-direction">NEXT</span>
-                                                <span class="article-title">Lorem ipsum dolor sit amet conset.</span>
-                                            </a>
-                                        </li>
-                                        <li class="arrows">
-                                            <a href="blog-item.html">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Reply Form -->
-                            <div class="reply-form">
-                                <div class="title">
-                                    <h3>Comment this article</h3>
-                                    <span class="line"></span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, culpa.</p>
-                                </div>
-                                <form action="">
-                                    <textarea name="comment" id="comment" cols="30" rows="10"
-                                       placeholder="Your comment"></textarea>
-                                    <input type="text" name="name" id="name" placeholder="Name*" required>
-                                    <input type="email" name="email" id="email" placeholder="Email*" required>
-                                    <input type="url" name="website" id="website" placeholder="Website">
-                                    <div class="check-group">
-                                        <input type="checkbox" name="save" id="save">
-                                        <label for="save">Lorem ipsum dolor, sit amet consectetur adipisicing elit
-                                            placeat.</label>
-                                    </div>
-                                    <input type="submit" value="Post comment">
-                                </form>
-                            </div>
-                        </div>
-                        <!-- Right side content -->
-                        <div class="col-xl-4 side-content">
-                            <!-- Advertise -->
-                            <div class="advertise-bg">
-                                <div class="overlay">
-                                    <!-- Donate tag -->
-                                    <div class="donate-tag">
-                                        <span>DONATE</span>
-                                    </div>
-                                    <div class="wrapper">
-                                        <h3>Lorem ipsum dolor sit amer tiff doll!</h3>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quisquam
-                                            aliquam.</p>
-                                        <a href="donate.html" class="btn btn-secondary">Donate now!</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Recent posts -->
-                            <div class="recent-posts">
-                                <!-- Item -->
-                                <div class="row title">
-                                    <div class="col-12">
-                                        <h2>Latest news</h2>
-                                    </div>
-                                </div>
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                                <!-- Item -->
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                                <!-- Item -->
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                                <!-- Item -->
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                                <!-- Item -->
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                                <!-- Item -->
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                                <!-- Item -->
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                                <!-- Item -->
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                                <!-- Item -->
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                                <!-- Item -->
-                                <a class="row item">
-                                    <div class="col-4">
-                                        <div class="img-wrap">
-                                            <!-- Img in css -->
-                                        </div>
-                                    </div>
-                                    <div class="col-8">
-                                        <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
-                                        <span>9 April 2021</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+      <!-- Start Main ---------------------------------------------------------------------------------->
+      <main id="main" class="main">
+        <section class="blog-item">
+          <article class="content-wrap">
+            <div class="row">
+              <!-- Title -->
+              <div class="col-12">
+                <div class="row title">
+                  <div class="col-xl-9">
+                    <h2>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      samer dell.
+                    </h2>
+                  </div>
+                  <div class="col-xl-3">
+                    <ul class="time">
+                      <li><i class="fas fa-calendar-alt"></i></li>
+                      <li>9 april 2021</li>
+                      <li><i class="far fa-clock"></i></li>
+                      <li>12:00</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Main content -->
+              <div class="col-xl-8 main-content">
+                <div class="main-article-img">
+                  <!-- Img in css -->
+                </div>
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Porro laboriosam quod qui eveniet maiores architecto sapiente
+                  iure sunt, odio cum.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Odit, iusto.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae dolore fuga reiciendis dolores sequi libero culpa
+                  eligendi debitis, deserunt provident ab unde. Deleniti error
+                  assumenda nobis!
+                </p>
+                <div class="secondary-article-img">
+                  <!-- Img in css -->
+                </div>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <ul class="article-list">
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus, sed! Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                  <li>Lorem, ipsum dolor sit amet.</li>
+                  <li>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li>Lorem, ipsum dolor sit amet consectetur adipisicinus.</li>
+                </ul>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit qui voluptatibus obcaecati? Ipsum exercitationem
+                  mollitia vero voluptates esse earum modi. Maxime, doloribus!
+                  Amet quod deserunt, veritatis eius nemo officiis eum, quo enim
+                  distinctio accusamus sequi nisi repudiandae cum consequuntur
+                  repellendus.
+                </p>
+                <!-- Social links -->
+                <div class="social">
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-youtube"></i>
+                    Youtube
+                  </a>
+                </div>
+                <!-- Navigation -->
+                <div class="row navigation">
+                  <div class="col-md-6">
+                    <ul class="left">
+                      <li class="arrows">
+                        <a href="blog-item.html">
+                          <i class="fas fa-chevron-left"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="blog-item.html">
+                          <span class="nav-direction">PREVIOUS</span>
+                          <span class="article-title"
+                            >Lorem ipsum dolor sit amet.</span
+                          >
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="right">
+                      <li>
+                        <a href="blog-item.html">
+                          <span class="nav-direction">NEXT</span>
+                          <span class="article-title"
+                            >Lorem ipsum dolor sit amet conset.</span
+                          >
+                        </a>
+                      </li>
+                      <li class="arrows">
+                        <a href="blog-item.html">
+                          <i class="fas fa-chevron-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Reply Form -->
+                <div class="reply-form">
+                  <div class="title">
+                    <h3>Comment this article</h3>
+                    <span class="line"></span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corrupti, culpa.
+                    </p>
+                  </div>
+                  <form action="">
+                    <textarea
+                      name="comment"
+                      id="comment"
+                      cols="30"
+                      rows="10"
+                      placeholder="Your comment"
+                    ></textarea>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Name*"
+                      required
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email*"
+                      required
+                    />
+                    <input
+                      type="url"
+                      name="website"
+                      id="website"
+                      placeholder="Website"
+                    />
+                    <div class="check-group">
+                      <input type="checkbox" name="save" id="save" />
+                      <label for="save"
+                        >Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit placeat.</label
+                      >
                     </div>
+                    <input type="submit" value="Post comment" />
+                  </form>
+                </div>
+              </div>
+              <!-- Right side content -->
+              <div class="col-xl-4 side-content">
+                <!-- Advertise -->
+                <div class="advertise-bg">
+                  <div class="overlay">
+                    <!-- Donate tag -->
+                    <div class="donate-tag">
+                      <span>DONATE</span>
+                    </div>
+                    <div class="wrapper">
+                      <h3>Lorem ipsum dolor sit amer tiff doll!</h3>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Neque quisquam aliquam.
+                      </p>
+                      <a href="donate.html" class="btn btn-secondary"
+                        >Donate now!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Recent posts -->
+                <div class="recent-posts">
+                  <!-- Item -->
+                  <div class="row title">
+                    <div class="col-12">
+                      <h2>Latest news</h2>
+                    </div>
+                  </div>
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                  <!-- Item -->
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                  <!-- Item -->
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                  <!-- Item -->
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                  <!-- Item -->
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                  <!-- Item -->
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                  <!-- Item -->
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                  <!-- Item -->
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                  <!-- Item -->
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                  <!-- Item -->
+                  <a class="row item">
+                    <div class="col-4">
+                      <div class="img-wrap">
+                        <!-- Img in css -->
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <h3>Lorem ipsum dolor sit, amet consectetur.</h3>
+                      <span>9 April 2021</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
 
-                </article>
-            </section>
+        <!-- Start Bottom ---------------------------------------------------------------------------------->
+        <section class="bottom">
+          <!-- Icon -->
+          <div class="icon">
+            <i class="far fa-envelope-open"></i>
+          </div>
 
-            <div id="bottom"></div>
+          <article class="content-wrap">
+            <div class="row">
+              <!-- About us -->
+              <div class="col-md-6 col-xl-3 about-us">
+                <img src="img/logo.png" alt="Logo" />
+                <p>
+                  Lorem ipsum dolor sit amet consecteturaer adipisicing elit!<br />Lorem
+                  ipsum dolor sit.
+                </p>
+                <ul class="social">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-youtube-square"></i></a>
+                  </li>
+                </ul>
+              </div>
 
-        </main>
-        <!-- End Main ------------------------------------------------------------------------------------------>
+              <!-- Menu -->
+              <div class="col-md-6 col-xl-2 bottom-menu">
+                <ul>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="instructors.html">Become pro</a></li>
+                  <li><a href="contact.html">Contact with us</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
 
-        <div id="footer"></div>
+              <!-- Contact info -->
+              <div class="col-md-6 col-xl-3 contact-info">
+                <!-- Item -->
+                <div class="row">
+                  <div class="col-md-2">
+                    <i class="fas fa-hands-helping"></i>
+                  </div>
+                  <div class="col-md-10">
+                    <span
+                      ><a href="tel:(+598)099000000"
+                        >(+ 598) 099 000 000</a
+                      ></span
+                    >
+                    <p>24/7 support</p>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="row">
+                  <div class="col-md-2">
+                    <i class="fas fa-life-ring"></i>
+                  </div>
+                  <div class="col-md-10">
+                    <span
+                      ><a href="tel:(+598)43500000">(+ 598) 4350 0000</a></span
+                    >
+                    <p>We are here for you!</p>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="row">
+                  <div class="col-md-2">
+                    <i class="fas fa-envelope-open"></i>
+                  </div>
+                  <div class="col-md-10">
+                    <span
+                      ><a href="mailto:info@dlweb.com">info@dlweb.com</a></span
+                    >
+                    <p>Do you have any questions?</p>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="row">
+                  <div class="col-md-2">
+                    <i class="fas fa-street-view"></i>
+                  </div>
+                  <div class="col-md-10">
+                    <span>Road 5 km 143. Road to Obelisco, Florida.</span>
+                    <p>Our location</p>
+                  </div>
+                </div>
+              </div>
 
-        <!-- Start Scroll to top ---------------------------------------------------------------------------------->
-        <a href="#" class="scroll_To_Top" title="Go to top">
-            <i class="fas fa-2x fa-chevron-up"></i>
-        </a>
-        <!-- End Scroll to top ---------------------------------------------------------------------------------->
+              <!-- Latest blog -->
+              <div class="col-md-6 col-xl-4 last-blog">
+                <div class="blog-link">
+                  <h3>
+                    <a href="blog-item.html"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tenicabo delectus.</a
+                    >
+                  </h3>
+                  <span>9 abr 2021</span>
+                </div>
+                <div class="blog-link">
+                  <h3>
+                    <a href="blog-item.html"
+                      >Lorem ipsum dolor sit amet consectenetur nostrum
+                      reprehenderit explicabo delectus.</a
+                    >
+                  </h3>
+                  <span>9 abr 2021</span>
+                </div>
+                <div class="blog-link">
+                  <h3>
+                    <a href="blog-item.html"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tenetur n explicabo delectus.</a
+                    >
+                  </h3>
+                  <span>9 abr 2021</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- End Bottom ---------------------------------------------------------------------------------->
+      </main>
+      <!-- End Main ------------------------------------------------------------------------------------------>
 
-        <!-- Javascript -------------------------------------------------------------------------------------->
-        <!-- Scroll to top -->
-        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-        <script>
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 100) {
-                        $('.scroll_To_Top').fadeIn();
-                    } else {
-                        $('.scroll_To_Top').fadeOut();
-                    }
-                });
-                $('.scroll_To_Top').click(function () {
-                    $('html, body').animate({
-                        scrollTop: 0
-                    }, 700);
-                    return false
-                });
-            });
-        </script>
+      <!-- Start Footer ------------------------------------------------------------------------------------------>
+      <footer class="footer">
+        <div class="content-wrap">
+          <div class="row">
+            <div class="col-md-6 col-xl-8">
+              <p>2021 Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a href="tel:(+598)099000000">tel. (+598) 099 000 000</a>
+            </div>
+            <div class="col-md-2 col-xl-2">
+              <a href="mailto:info@dlweb.com">info@dlweb.com</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer ------------------------------------------------------------------------------------------>
 
+      <!-- Start Scroll to top ---------------------------------------------------------------------------------->
+      <a href="#" class="scroll_To_Top" title="Go to top">
+        <i class="fas fa-2x fa-chevron-up"></i>
+      </a>
+      <!-- End Scroll to top ---------------------------------------------------------------------------------->
+
+      <!-- Javascript -------------------------------------------------------------------------------------->
+      <!-- Scroll to top -->
+      <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+      <script>
+        $(document).ready(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+              $(".scroll_To_Top").fadeIn();
+            } else {
+              $(".scroll_To_Top").fadeOut();
+            }
+          });
+          $(".scroll_To_Top").click(function () {
+            $("html, body").animate(
+              {
+                scrollTop: 0,
+              },
+              700
+            );
+            return false;
+          });
+        });
+      </script>
+      <!-- Menu JS -->
+      <script src="js/menu.js"></script>
     </div>
-</body>
-
+  </body>
 </html>

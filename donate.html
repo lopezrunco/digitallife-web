@@ -1,147 +1,371 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
     <!-- Bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <!-- Custom css -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <title>Donate - DL Web</title>
-    <!-- Jquery include header.html and footer.html -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#bottom").load("bottom.html");
-            $("#footer").load("footer.html");
-        });
-    </script>
-</head>
+  </head>
 
-<body class="donate">
+  <body class="donate">
     <div id="main-wrapper">
+      <!-- Start Header ---------------------------------------------------------------------------------->
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="main logo" /></a>
+        </div>
+        <!-- Start Menu ------------------------------------------------------------------------------------>
+        <nav id="menu" class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <!-- Contact info -->
+          <ul class="contact-info-mobile">
+            <li>
+              <a href="tel:(+59899000000)"
+                ><i class="fa fa-phone">&nbsp;&nbsp;</i>24/7 support: +598 98
+                000 000</a
+              >
+            </li>
+          </ul>
+          <!-- Social links mobile -->
+          <ul class="social-links-mobile">
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fa fa-bars"></i>
+        </div>
+        <nav id="menu-desktop" class="menu-desktop">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- End Menu ---------------------------------------------------------------------------------->
 
-        <div id="header"></div>
+        <!-- Start Main h1 ---------------------------------------------------------------------------------->
+        <div class="main-logo">
+          <h1>Web name</h1>
+        </div>
+        <!-- End Main h1 ---------------------------------------------------------------------------------->
+      </header>
+      <!-- End Header -------------------------------------------------------------------------------------->
 
-        <!-- Start Main ---------------------------------------------------------------------------------->
-        <main id="main" class="main">
+      <!-- Start Main ---------------------------------------------------------------------------------->
+      <main id="main" class="main">
+        <!-- Start donate ---------------------------------------------------------------------------------->
+        <section class="donate">
+          <article class="content-wrap">
+            <div class="row title">
+              <div class="col-12">
+                <h2>Donate to our fantastic project!</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Info -->
+              <div class="col-xl-6 info">
+                <div class="row">
+                  <div class="col-12">
+                    <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                    <h3>
+                      Lorem ipsum dolor sit amet, consecteet molestias
+                      blanditiis recusandae.
+                    </h3>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Inventore quidem qui error vero fuga accusantium debitis
+                      cumque. Enim error dolor id non quibusdam dolores veniam.
+                    </p>
+                  </div>
+                  <div class="col-12 float-images">
+                    <img src="img/donate-1.jpg" alt="Donate" />
+                    <img src="img/donate-2.jpg" alt="Donate" />
+                    <img src="img/donate-3.jpg" alt="Donate" />
+                  </div>
+                </div>
+              </div>
+              <!-- Form -->
+              <div class="col-xl-6 form">
+                <form class="donate-form">
+                  <label for="amount" class="amount-label">$</label>
+                  <input
+                    type="number"
+                    name="amount"
+                    id="amount"
+                    value="$1.00"
+                    class="amount-input"
+                    placeholder="$1.00"
+                  />
+                  <ul class="amount-btns">
+                    <li><button>$1.00</button></li>
+                    <li><button>$5.00</button></li>
+                    <li><button>$10.00</button></li>
+                    <li><button>$25.00</button></li>
+                    <li><button>Other</button></li>
+                  </ul>
+                  <legend>Personal info</legend>
+                  <div class="name-group">
+                    <label for="name">First name *</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="First name"
+                      required
+                    />
+                  </div>
+                  <div class="last-name-group">
+                    <label for="last-name">Last name *</label>
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      placeholder="Last name"
+                      required
+                    />
+                  </div>
+                  <div class="email-group">
+                    <label for="email">Email Address *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                  <div class="phone-group">
+                    <label for="phone">Phone number</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      placeholder="Phone number"
+                    />
+                  </div>
+                  <input type="checkbox" name="anonymus" id="anonymus" />
+                  <label for="anonymus">Make anonymus donation</label>
+                  <input type="submit" value="Donate" />
+                </form>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- End donate ---------------------------------------------------------------------------------->
 
-            <!-- Start donate ---------------------------------------------------------------------------------->
-            <section class="donate">
-                <article class="content-wrap">
-                    <div class="row title">
-                        <div class="col-12">
-                            <h2>Donate to our fantastic project!</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- Info -->
-                        <div class="col-xl-6 info">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-                                    <h3>
-                                        Lorem ipsum dolor sit amet, consecteet molestias blanditiis
-                                        recusandae.
-                                    </h3>
-                                    <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quidem qui error
-                                        vero fuga accusantium debitis cumque. Enim error dolor id non quibusdam dolores
-                                        veniam.
-                                    </p>
-                                </div>
-                                <div class="col-12 float-images">
-                                    <img src="img/donate-1.jpg" alt="Donate" />
-                                    <img src="img/donate-2.jpg" alt="Donate" />
-                                    <img src="img/donate-3.jpg" alt="Donate" />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Form -->
-                        <div class="col-xl-6 form">
-                            <form class="donate-form">
-                                <label for="amount" class="amount-label">$</label>
-                                <input type="number" name="amount" id="amount" value="$1.00" class="amount-input" placeholder="$1.00">
-                                <ul class="amount-btns">
-                                    <li><button>$1.00</button></li>
-                                    <li><button>$5.00</button></li>
-                                    <li><button>$10.00</button></li>
-                                    <li><button>$25.00</button></li>
-                                    <li><button>Other</button></li>
-                                </ul>
-                                <legend>Personal info</legend>
-                                <div class="name-group">
-                                    <label for="name">First name *</label>
-                                    <input type="text" name="name" id="name" placeholder="First name" required>    
-                                </div>
-                                <div class="last-name-group">
-                                    <label for="last-name">Last name *</label>
-                                    <input type="text" name="last-name" id="last-name" placeholder="Last name" required>    
-                                </div>
-                                <div class="email-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" name="email" id="email" placeholder="Email Address" required>
-                                </div>
-                                <div class="phone-group">
-                                    <label for="phone">Phone number</label>
-                                    <input type="tel" name="phone" id="phone" placeholder="Phone number">
-                                </div>
-                                <input type="checkbox" name="anonymus" id="anonymus">
-                                <label for="anonymus">Make anonymus donation</label>
-                                <input type="submit" value="Donate">
-                            </form>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <!-- End donate ---------------------------------------------------------------------------------->
+        <!-- Start Bottom ---------------------------------------------------------------------------------->
+        <section class="bottom">
+          <!-- Icon -->
+          <div class="icon">
+            <i class="far fa-envelope-open"></i>
+          </div>
 
+          <article class="content-wrap">
+            <div class="row">
+              <!-- About us -->
+              <div class="col-md-6 col-xl-3 about-us">
+                <img src="img/logo.png" alt="Logo" />
+                <p>
+                  Lorem ipsum dolor sit amet consecteturaer adipisicing elit!<br />Lorem
+                  ipsum dolor sit.
+                </p>
+                <ul class="social">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-youtube-square"></i></a>
+                  </li>
+                </ul>
+              </div>
 
+              <!-- Menu -->
+              <div class="col-md-6 col-xl-2 bottom-menu">
+                <ul>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="instructors.html">Become pro</a></li>
+                  <li><a href="contact.html">Contact with us</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                </ul>
+              </div>
 
-            <div id="bottom"></div>
+              <!-- Contact info -->
+              <div class="col-md-6 col-xl-3 contact-info">
+                <!-- Item -->
+                <div class="row">
+                  <div class="col-md-2">
+                    <i class="fas fa-hands-helping"></i>
+                  </div>
+                  <div class="col-md-10">
+                    <span
+                      ><a href="tel:(+598)099000000"
+                        >(+ 598) 099 000 000</a
+                      ></span
+                    >
+                    <p>24/7 support</p>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="row">
+                  <div class="col-md-2">
+                    <i class="fas fa-life-ring"></i>
+                  </div>
+                  <div class="col-md-10">
+                    <span
+                      ><a href="tel:(+598)43500000">(+ 598) 4350 0000</a></span
+                    >
+                    <p>We are here for you!</p>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="row">
+                  <div class="col-md-2">
+                    <i class="fas fa-envelope-open"></i>
+                  </div>
+                  <div class="col-md-10">
+                    <span
+                      ><a href="mailto:info@dlweb.com">info@dlweb.com</a></span
+                    >
+                    <p>Do you have any questions?</p>
+                  </div>
+                </div>
+                <!-- Item -->
+                <div class="row">
+                  <div class="col-md-2">
+                    <i class="fas fa-street-view"></i>
+                  </div>
+                  <div class="col-md-10">
+                    <span>Road 5 km 143. Road to Obelisco, Florida.</span>
+                    <p>Our location</p>
+                  </div>
+                </div>
+              </div>
 
-        </main>
-        <!-- End Main ------------------------------------------------------------------------------------------>
+              <!-- Latest blog -->
+              <div class="col-md-6 col-xl-4 last-blog">
+                <div class="blog-link">
+                  <h3>
+                    <a href="blog-item.html"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tenicabo delectus.</a
+                    >
+                  </h3>
+                  <span>9 abr 2021</span>
+                </div>
+                <div class="blog-link">
+                  <h3>
+                    <a href="blog-item.html"
+                      >Lorem ipsum dolor sit amet consectenetur nostrum
+                      reprehenderit explicabo delectus.</a
+                    >
+                  </h3>
+                  <span>9 abr 2021</span>
+                </div>
+                <div class="blog-link">
+                  <h3>
+                    <a href="blog-item.html"
+                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tenetur n explicabo delectus.</a
+                    >
+                  </h3>
+                  <span>9 abr 2021</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- End Bottom ---------------------------------------------------------------------------------->
+      </main>
+      <!-- End Main ------------------------------------------------------------------------------------------>
 
-        <div id="footer"></div>
+      <!-- Start Footer ------------------------------------------------------------------------------------------>
+      <footer class="footer">
+        <div class="content-wrap">
+          <div class="row">
+            <div class="col-md-6 col-xl-8">
+              <p>2021 Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="col-md-4 col-xl-2">
+              <a href="tel:(+598)099000000">tel. (+598) 099 000 000</a>
+            </div>
+            <div class="col-md-2 col-xl-2">
+              <a href="mailto:info@dlweb.com">info@dlweb.com</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer ------------------------------------------------------------------------------------------>
 
-        <!-- Start Scroll to top ---------------------------------------------------------------------------------->
-        <a href="#" class="scroll_To_Top" title="Go to top">
-            <i class="fas fa-2x fa-chevron-up"></i>
-        </a>
-        <!-- End Scroll to top ---------------------------------------------------------------------------------->
+      <!-- Start Scroll to top ---------------------------------------------------------------------------------->
+      <a href="#" class="scroll_To_Top" title="Go to top">
+        <i class="fas fa-2x fa-chevron-up"></i>
+      </a>
+      <!-- End Scroll to top ---------------------------------------------------------------------------------->
 
-        <!-- Javascript -------------------------------------------------------------------------------------->
-        <!-- Scroll to top -->
-        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-        <script>
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 100) {
-                        $('.scroll_To_Top').fadeIn();
-                    } else {
-                        $('.scroll_To_Top').fadeOut();
-                    }
-                });
-                $('.scroll_To_Top').click(function () {
-                    $('html, body').animate({
-                        scrollTop: 0
-                    }, 700);
-                    return false
-                });
-            });
-        </script>
+      <!-- Javascript -------------------------------------------------------------------------------------->
+      <!-- Scroll to top -->
+      <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+      <script>
+        $(document).ready(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+              $(".scroll_To_Top").fadeIn();
+            } else {
+              $(".scroll_To_Top").fadeOut();
+            }
+          });
+          $(".scroll_To_Top").click(function () {
+            $("html, body").animate(
+              {
+                scrollTop: 0,
+              },
+              700
+            );
+            return false;
+          });
+        });
+      </script>
+      <!-- Menu JS -->
+      <script src="js/menu.js"></script>
     </div>
-</body>
-
+  </body>
 </html>
